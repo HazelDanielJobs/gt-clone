@@ -1,0 +1,89 @@
+/* ============================================
+   PERSONAL/BUSINESS BANKING - CONTENT SECTIONS
+   ============================================ */
+.section-content-block {
+  padding: 3.75rem 0;
+  border-bottom: 1px solid #e0e1e2;
+}
+
+.section-content-block:last-child {
+  border-bottom: none;
+}
+
+.section-content-block.alt {
+  background: #f7f8f8;
+}
+
+.content-block-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-right: 2.5rem;
+}
+
+.content-block-body h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 1.25rem;
+}
+
+.content-block-body p {
+  color: #696f73;
+  margin-bottom: 1.5rem;
+}
+
+.content-block-body .link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.content-block-body .link-list li {
+  margin-bottom: 0.5rem;
+}
+
+.content-block-body .link-list a {
+  color: #dd4f05;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.content-block-body .link-list a:hover {
+  color: #ab3d04;
+}
+
+.content-block-image {
+  width: 100%;
+  min-height: 18.75rem;
+  background-color: #e0e1e2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Reverse layout for alternating sections */
+.section-content-block.reverse .row {
+  flex-direction: row-reverse;
+}
+
+.section-content-block.reverse .content-block-body {
+  padding-right: 0;
+  padding-left: 2.5rem;
+}
+
+/* ============================================
+   RESPONSIVE - BANKING PAGES
+   ============================================ */
+@media (max-width: 47.9375rem) {
+  .section-content-block.reverse .row {
+    flex-direction: column;
+  }
+  .content-block-body {
+    padding-right: 0;
+  }
+  .section-content-block.reverse .content-block-body {
+    padding-left: 0;
+  }
+}

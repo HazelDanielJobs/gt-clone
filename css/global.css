@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --bg-accent: #dd4f05;
+  --bg-primary: #f7f8f8;
+  --bg-copyright: #434a51;
+  --bg-accent-dark: #923403;
+  --bg-banner: #fdf6f2;
+  --bg-icon: #e0e1e2;
+
+  --text-primary: #424a52;
+  --text-secondary: #696f73;
+  --text-active: #dd5006;
+}

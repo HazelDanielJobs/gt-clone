@@ -1,0 +1,379 @@
+/* ============================================
+   HOME PAGE - HERO CAROUSEL
+   ============================================ */
+.hero-section {
+  position: relative;
+  background: #f7f8f8;
+  padding: 0 !important;
+  width: 100vw;
+}
+.her-section .container_ {
+  position: relative;
+  width: 100% !important;
+}
+
+.hero-section .carousel-item {
+  height: 42rem;
+  /* margin: 0 !important; */
+}
+
+.hero-section .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-slide {
+  display: flex;
+  align-items: stretch;
+  min-height: 25rem;
+}
+
+.hero-slide-content {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  padding: 3rem 2.5rem 3rem 0;
+}
+
+.hero-slide-image {
+  width: 40%;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  min-height: 25rem;
+}
+
+.hero-slide-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 1rem;
+}
+
+.hero-slide-content p {
+  color: #696f73;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Login overlay on the homepage hero */
+.login-overlay {
+  position: absolute;
+  top: 1.5rem;
+  right: 0.9375rem;
+  width: 18.75rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 0;
+}
+
+.login-overlay .login-tabs {
+  display: flex;
+}
+
+.login-overlay .login-tab {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #f0f0f1;
+  color: #696f73;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.login-overlay .login-tab.active {
+  background: #fff;
+  color: #dd4f05;
+  border-bottom-color: #dd4f05;
+}
+
+.login-overlay .login-body {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.login-overlay .login-body .btn {
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login-overlay .login-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 13px;
+}
+
+.login-overlay .login-links a {
+  color: #696f73;
+  font-weight: 600;
+}
+
+.login-overlay .login-links a:hover {
+  color: #dd4f05;
+}
+
+/* Carousel indicators override */
+.hero-section .carousel-indicators {
+  bottom: 1.25rem;
+  /* left: 0; */
+  left: auto;
+  /* background-color: red; */
+  width: max-content;
+  justify-self: flex-start;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.hero-section .carousel-indicators [data-bs-target] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  opacity: 0.5;
+}
+
+.hero-section .carousel-indicators .active {
+  background-color: #dd4f05;
+  opacity: 1;
+}
+
+/* ============================================
+   HOME PAGE - PRODUCTS SECTION
+   ============================================ */
+.section-products {
+  padding: 3.75rem 0;
+}
+
+.section-products .section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.product-card {
+  display: block;
+  background: #f7f8f8;
+  margin-bottom: 1.875rem;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+
+.product-card-image {
+  width: 100%;
+  height: 12.5rem;
+  background-color: #e0e1e2;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.product-card-body h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 0.5rem;
+}
+
+.product-card-body p {
+  font-size: 14px;
+  color: #696f73;
+  margin-bottom: 0.75rem;
+}
+
+.product-card-body .card-link {
+  color: #dd4f05;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-card-body .card-link .arrow {
+  display: inline-block;
+  transition: transform 0.2s;
+  margin-left: 0.25rem;
+}
+
+.product-card:hover .card-link .arrow {
+  transform: translateX(0.25rem);
+}
+
+/* ============================================
+   HOME PAGE - FEATURE CARDS (Public Offer, etc.)
+   ============================================ */
+.section-features {
+  padding: 0 0 3.75rem;
+}
+
+.feature-card {
+  display: flex;
+  background: #f7f8f8;
+  overflow: hidden;
+  margin-bottom: 1.875rem;
+  min-height: 16.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.feature-card-image {
+  width: 45%;
+  background-color: #e0e1e2;
+  background-size: cover;
+  background-position: center;
+}
+
+.feature-card-body {
+  width: 55%;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-card-body h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card-body p {
+  font-size: 14px;
+  color: #696f73;
+  margin-bottom: 1rem;
+}
+
+/* ============================================
+   HOME PAGE - INITIATIVES SECTION
+   ============================================ */
+.section-initiatives {
+  padding: 3.75rem 0;
+  background: #fff;
+}
+
+.section-initiatives .section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 2rem;
+}
+
+.initiative-card {
+  display: block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+}
+
+.initiative-card:hover {
+  color: inherit;
+}
+
+.initiative-card-image {
+  width: 100%;
+  height: 12.5rem;
+  background-color: #e0e1e2;
+  background-size: cover;
+  background-position: center;
+}
+
+.initiative-card-body {
+  padding: 1rem 0;
+}
+
+.initiative-card-body h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 0.25rem;
+}
+
+.initiative-card-body p {
+  font-size: 13px;
+  color: #a3a5a8;
+  margin-bottom: 0;
+}
+
+.initiatives-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.25rem;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.initiatives-scroll::-webkit-scrollbar {
+  height: 0.25rem;
+}
+
+.initiatives-scroll::-webkit-scrollbar-track {
+  background: #e0e1e2;
+}
+
+.initiatives-scroll::-webkit-scrollbar-thumb {
+  background: #dd4f05;
+}
+
+.initiative-card {
+  min-width: 18.75rem;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   RESPONSIVE - HOME PAGE
+   ============================================ */
+@media (max-width: 47.9375rem) {
+  .login-overlay {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .hero-slide {
+    flex-direction: column;
+  }
+  .hero-slide-content,
+  .hero-slide-image {
+    width: 100%;
+  }
+  .hero-slide-image {
+    min-height: 12.5rem;
+  }
+  .feature-card {
+    flex-direction: column;
+  }
+  .feature-card-image,
+  .feature-card-body {
+    width: 100%;
+  }
+  .feature-card-image {
+    min-height: 12.5rem;
+  }
+}

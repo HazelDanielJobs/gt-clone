@@ -1,0 +1,128 @@
+/* ============================================
+   HELP CENTRE - CATEGORY TABS
+   ============================================ */
+.section-help-tabs {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.help-tabs-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.help-tab-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  width: 12.5rem;
+  background: #f7f8f8;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.help-tab-item:hover,
+.help-tab-item.active {
+  border-color: #dd4f05;
+  color: inherit;
+}
+
+.help-tab-item .tab-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #dd4f05;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.help-tab-item .tab-icon span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.help-tab-item .tab-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #424a52;
+  line-height: 1.3;
+}
+
+/* ============================================
+   HELP CENTRE - FAQ ACCORDION
+   ============================================ */
+.section-faq {
+  padding: 3rem 0 3.75rem;
+}
+
+.section-faq .section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #424a52;
+  margin-bottom: 2rem;
+}
+
+.accordion-item {
+  border-top: 1px solid #e3e4e5;
+  border-bottom: 1px solid #e3e4e5;
+  margin-top: -1px;
+}
+
+.accordion-question {
+  position: relative;
+  padding: 0.875rem 2.5rem 0.9375rem 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #4c535b;
+  letter-spacing: -0.015em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-question .toggle-icon {
+  color: #7a8086;
+  font-size: 18px;
+  font-weight: 400;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.accordion-answer {
+  border-left: 0.25rem solid #d9dbdc;
+  padding: 0.5rem 2.8125rem 0.0625rem 1.5625rem;
+  margin-bottom: 1.125rem;
+  display: none;
+}
+
+.accordion-item.open .accordion-answer {
+  display: block;
+}
+
+.accordion-item.open .toggle-icon .plus {
+  display: none;
+}
+
+.accordion-item .minus {
+  display: none;
+}
+
+.accordion-item.open .minus {
+  display: inline;
+}
+
+.accordion-item:not(.open) .plus {
+  display: inline;
+}
