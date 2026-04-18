@@ -1,7 +1,43 @@
+/* @font-face {
+  font-family: "Acumin Pro";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro"), url("../fonts/Acumin-RPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Acumin Pro Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Italic"),
+    url("../fonts/Acumin-ItPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Acumin Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold"),
+    url("../fonts/Acumin-BdPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Acumin Pro Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Acumin Pro Bold Italic"),
+    url("../fonts/Acumin-BdItPro.woff") format("woff");
+} */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Acumin Pro", "sans-serif";
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -16,6 +52,7 @@ body {
   --bg-banner: #fdf6f2;
   --bg-icon: #e0e1e2;
 
+  --text-white: #fff;
   --text-primary: #424a52;
   --text-secondary: #696f73;
   --text-active: #dd5006;

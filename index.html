@@ -8,7 +8,17 @@
       content="Guaranty Trust Bank - Banking made easy with innovative products and services."
     />
     <title>Guaranty Trust Bank Ltd | GTBank</title>
-    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon" />
+
+    <!-- CDNs -->
+    <link href="https://fonts.cdnfonts.com/css/acumin-pro" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,11 +27,13 @@
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <style>
       .carousel-item {
         transition: transform 0.6s ease;
       }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -58,13 +70,35 @@
           <li><a href="#">Security</a></li>
           <li>
             <a href="#" aria-label="Search" class="search-icon_">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 18 18"><path fill-rule="evenodd" d="M14.18 13.24c1.172-1.41 1.91-3.22 1.91-5.2C16.09 3.62 12.47 0 8.044 0S0 3.62 0 8.04c0 4.43 3.62 8.05 8.045 8.05a7.915 7.915 0 0 0 5.195-1.91l3.62 3.62c.134.13.302.2.47.2a.683.683 0 0 0 .47-.2.65.65 0 0 0 0-.94l-3.62-3.62zm-6.135 1.54c-3.687 0-6.704-3.01-6.704-6.7 0-3.69 3.017-6.71 6.704-6.71s6.704 3.02 6.704 6.71-3.017 6.7-6.704 6.7z" fill="currentColor"></path></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14.18 13.24c1.172-1.41 1.91-3.22 1.91-5.2C16.09 3.62 12.47 0 8.044 0S0 3.62 0 8.04c0 4.43 3.62 8.05 8.045 8.05a7.915 7.915 0 0 0 5.195-1.91l3.62 3.62c.134.13.302.2.47.2a.683.683 0 0 0 .47-.2.65.65 0 0 0 0-.94l-3.62-3.62zm-6.135 1.54c-3.687 0-6.704-3.01-6.704-6.7 0-3.69 3.017-6.71 6.704-6.71s6.704 3.02 6.704 6.71-3.017 6.7-6.704 6.7z"
+                  fill="currentColor"
+                ></path>
+              </svg>
             </a>
           </li>
         </ul>
         <a href="#" class="online-banking-btn">
           <span id="shopping-bag-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="78%" height="100%" viewBox="0 0 14 18"><path fill-rule="evenodd" d="M2.625 6H0v12h14V6H2.625zM1.5 7.5h11v9h-11v-9zM6.993 0c2.19-.004 4 1.805 4.007 4.04V6H3V4.053C2.998 1.818 4.803.008 6.993 0zm.003 1.5a2.538 2.538 0 0 0-2.541 2.553V6h5.09V4.043A2.538 2.538 0 0 0 6.996 1.5z" fill="currentColor" ></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="78%"
+              height="100%"
+              viewBox="0 0 14 18"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.625 6H0v12h14V6H2.625zM1.5 7.5h11v9h-11v-9zM6.993 0c2.19-.004 4 1.805 4.007 4.04V6H3V4.053C2.998 1.818 4.803.008 6.993 0zm.003 1.5a2.538 2.538 0 0 0-2.541 2.553V6h5.09V4.043A2.538 2.538 0 0 0 6.996 1.5z"
+                fill="currentColor"
+              ></path>
+            </svg>
           </span>
           Online Banking Login
           <span class="arrow-right"></span>
@@ -78,23 +112,30 @@
         <ul class="main-nav-links">
           <li>
             <a href="index.html" class="home-icon_ active" aria-label="Home">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path fill="currentColor" fill-rule="evenodd" d="M6.5 17.003h-4c-.276 0-.5-.23-.5-.5v-7.5H.5a.508.508 0 0 1-.47-.34.495.495 0 0 1 .152-.55l8.5-7a.506.506 0 0 1 .636 0L12 3.322v-1.82c0-.28.224-.5.5-.5h2c.276 0 .5.22.5.5v4.29l2.818 2.32a.505.505 0 0 1-.317.89H16v7.5c0 .27-.225.5-.5.5h-4v-6.3c0-.28-.225-.5-.5-.5H7c-.277 0-.5.22-.5.5v6.3z"></path></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M6.5 17.003h-4c-.276 0-.5-.23-.5-.5v-7.5H.5a.508.508 0 0 1-.47-.34.495.495 0 0 1 .152-.55l8.5-7a.506.506 0 0 1 .636 0L12 3.322v-1.82c0-.28.224-.5.5-.5h2c.276 0 .5.22.5.5v4.29l2.818 2.32a.505.505 0 0 1-.317.89H16v7.5c0 .27-.225.5-.5.5h-4v-6.3c0-.28-.225-.5-.5-.5H7c-.277 0-.5.22-.5.5v6.3z"
+                ></path>
+              </svg>
             </a>
           </li>
           <li><a href="personal-banking.html">Personal</a></li>
           <li><a href="business-banking.html">Business</a></li>
           <li><a href="about.html">About Us</a></li>
           <li>
-            <a
-              href="#"
-              class=""
-              >Open an Account</a
-            >
+            <a href="#" class="">Open an Account</a>
           </li>
         </ul>
         <div class="logo">
           <div class="logo-icon">
-            <img src="./icons/logo.svg" alt="">
+            <img src="./icons/logo.svg" alt="" />
           </div>
           <span class="logo-text"
             >Guaranty Trust Bank Ltd<br /><small>RC.152331</small></span
@@ -110,7 +151,7 @@
           id="heroCarousel"
           class="carousel slide"
           data-bs-ride="carousel"
-          data-bs-interval="5000"
+          data-bs-interval="50000"
         >
           <div class="carousel-indicators">
             <button
@@ -149,124 +190,134 @@
           <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
-              <img src="./images/home/hero-slide-1.jpg" alt="" class="hero-carousel-image">
+              <img
+                src="./images/home/hero-slide-1.jpg"
+                alt=""
+                class="hero-carousel-image"
+              />
               <div class="hero-slide">
-                <div class="hero-slide-content">
-                  <div>
-                    <h2>GTBank Food &amp; Drink Festival</h2>
-                    <p>
-                      Join us for an unforgettable culinary experience featuring
-                      the best of African and international cuisine.
-                    </p>
-                    <a href="#" class="btn btn-primary"
-                      >Learn More <span class="btn-arrow"></span
-                    ></a>
-                  </div>
+                <div class="hero-slide-content" style="--top-spacing-here: 8">
+                  <p>
+                    <span class="hero-text-color-accent"
+                      >1st-3rd May,<br />
+                      2026</span
+                    >
+                    <br />
+                    <small style="color: black"
+                      >Masterclass. Street Food. Retail Stalls</small
+                    >
+                    <small style="color: #e36c09">Attendance is FREE!</small>
+                  </p>
+                  <a href=""
+                    >See Details
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
                 </div>
-                <div
-                  class="hero-slide-image"
-                  style="background-color: #e8c9a0"
-                ></div>
               </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="carousel-item">
-              <img src="./images/home/hero-slide-2.png" alt="" class="hero-carousel-image">
+              <img
+                src="./images/home/hero-slide-2.png"
+                alt=""
+                class="hero-carousel-image"
+              />
               <div class="hero-slide">
-                <div class="hero-slide-content">
-                  <div>
-                    <h2>Quick Airtime Loan</h2>
-                    <p>
-                      Get instant airtime credit on your mobile phone. Dial
-                      *737*8# to get started today.
-                    </p>
-                    <a href="#" class="btn btn-primary"
-                      >Get Started <span class="btn-arrow"></span
-                    ></a>
-                  </div>
+                <div class="hero-slide-content" style="--top-spacing-here: 4">
+                  <p>
+                    <span class="hero-text-color-primary"
+                      >Quick Airtime Loan
+                      <span class="hero-text-color-accent"
+                        >Fast recharge at a fraction of the usual cost</span
+                      >
+                    </span>
+                    <small
+                      class="hero-text-color-primary-light"
+                      style="margin-top: 2rem; opacity: 0.8"
+                      >Terms and Conditions Apply
+                    </small>
+                  </p>
+                  <a href=""
+                    >Learn More
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
                 </div>
-                <div
-                  class="hero-slide-image"
-                  style="background-color: #a0c8e8"
-                ></div>
               </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="carousel-item">
-              <img src="./images/home/hero-slide-3.jpg" alt="" class="hero-carousel-image">
+              <img
+                src="./images/home/hero-slide-3.jpg"
+                alt=""
+                class="hero-carousel-image"
+              />
               <div class="hero-slide">
-                <div class="hero-slide-content">
-                  <div>
-                    <h2>Zero POS Charges</h2>
-                    <p>
-                      Enjoy zero charges on all POS transactions nationwide.
-                      Bank with ease.
-                    </p>
-                    <a href="#" class="btn btn-primary"
-                      >Find Out More <span class="btn-arrow"></span
-                    ></a>
-                  </div>
+                <div class="hero-slide-content" style="--top-spacing-here: 4">
+                  <p>
+                    <span class="hero-text-color-accent"
+                      >Link your BVN and NIN to keep your account active
+                    </span>
+                  </p>
+                  <a href=""
+                    >Link Here
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
                 </div>
-                <div
-                  class="hero-slide-image"
-                  style="background-color: #c0dfa0"
-                ></div>
               </div>
             </div>
 
             <!-- Slide 4 -->
             <div class="carousel-item">
-              <img src="./images/home/hero-slide-4.jpg" alt="" class="hero-carousel-image">
+              <img
+                src="./images/home/hero-slide-4.jpg"
+                alt=""
+                class="hero-carousel-image"
+              />
               <div class="hero-slide">
-                <div class="hero-slide-content">
-                  <div>
-                    <h2>Zero POS Charges</h2>
-                    <p>
-                      Enjoy zero charges on all POS transactions nationwide.
-                      Bank with ease.
-                    </p>
-                    <a href="#" class="btn btn-primary"
-                      >Find Out More <span class="btn-arrow"></span
-                    ></a>
-                  </div>
+                <div class="hero-slide-content" style="--top-spacing-here: 4">
+                  <p>
+                    <span class="hero-text-color-primary"
+                      >Zero Processing Charges For Life On
+                      <span class="hero-text-color-accent"
+                        >All GTBank POS Terminals </span
+                      >
+                    </span>
+                    <small
+                      class="hero-text-color-primary-light"
+                      style="margin-top: 2rem; opacity: 0.8"
+                      >Terms and Conditions Apply
+                    </small>
+                  </p>
+                  <a href=""
+                    >Request Here
+                    <span><i class="fa-solid fa-arrow-right"></i></span
+                  ></a>
                 </div>
-                <div
-                  class="hero-slide-image"
-                  style="background-color: #c0dfa0"
-                ></div>
               </div>
             </div>
 
             <!-- Slide 5 -->
             <div class="carousel-item">
-              <img src="./images/home/hero-slide-5.jpg" alt="" class="hero-carousel-image">
+              <img
+                src="./images/home/hero-slide-5.jpg"
+                alt=""
+                class="hero-carousel-image"
+              />
               <div class="hero-slide">
                 <div class="hero-slide-content">
-                  <div>
-                    <h2>Zero POS Charges</h2>
-                    <p>
-                      Enjoy zero charges on all POS transactions nationwide.
-                      Bank with ease.
-                    </p>
-                    <a href="#" class="btn btn-primary"
-                      >Find Out More <span class="btn-arrow"></span
-                    ></a>
-                  </div>
+
                 </div>
-                <div
-                  class="hero-slide-image"
-                  style="background-color: #c0dfa0"
-                ></div>
+
               </div>
             </div>
-
           </div>
         </div>
 
         <!-- Login Overlay -->
         <div class="login-overlay">
+          <div class="overlay-title">Online Banking</div>
           <div class="login-tabs">
             <button class="login-tab active">Personal</button>
             <button class="login-tab">Business</button>
@@ -274,12 +325,12 @@
           <div class="login-body">
             <a
               href="#"
-              class="btn btn-primary"
-              style="width: 100%; display: block; margin-bottom: 1rem"
+              class="btn_"
               >Login</a
             >
             <div class="login-links">
               <a href="#">Register</a>
+              <span>|</span>
               <a href="#">Demo</a>
             </div>
           </div>
@@ -289,8 +340,12 @@
 
     <!-- ============ INNOVATIVE BANKING PRODUCTS ============ -->
     <section class="section-products">
-      <div class="container">
-        <h2 class="section-title">Innovative Banking Products</h2>
+      <div class="container_">
+        <div class="section-title">
+           <h2>Innovative Banking Products</h2>
+           <p>Tailored to your lifestyle, designed for your
+            personal and business needs.</p>
+          </div>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3">
             <a href="#" class="product-card">
@@ -480,54 +535,167 @@
     <!-- ============ FOOTER SERVICES ============ -->
     <footer>
       <div class="footer-services">
-        <div class="container">
+        <div class="wrapper">
           <div class="footer-services-grid">
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg viewBox="0 0 65 65" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M31.7 36.9h1.5v14.7h-1.5z"></path><path fill="currentColor" d="M58.3 25h-3C55 12.9 45.3 3.1 33.2 2.7V0h-1.5v2.8c-12 .3-21.8 10.1-22 22.2h-3v1.5h3c.9 15.4 21.4 37 22.3 37.9l.5.6.5-.6c.9-.9 21.4-22.5 22.3-37.9h3V25zM32.5 62.9C29.2 59.3 12 40 11.2 26.5h10.2V25H11.2c.3-11.3 9.3-20.4 20.6-20.8v10.4h1.5V4.3c11.2.4 20.2 9.5 20.5 20.7H43.6v1.5h10.2C53 40 35.8 59.3 32.5 62.9z"></path><path fill="currentColor" d="M48.5 23.6l1.5-.2c-1.1-7.9-7.3-14.1-15.2-15.1l-.2 1.5c7.2.9 13 6.6 13.9 13.8zM30.2 8.3c-7.9 1-14.1 7.3-15.2 15.1l1.5.2c1-7.2 6.7-12.9 13.9-13.9l-.2-1.4zM34.8 43.3c8-1 14.2-7.3 15.2-15.2l-1.5-.2c-.9 7.3-6.6 13-13.9 14l.2 1.4zM16.5 27.9l-1.5.2c1 7.9 7.3 14.2 15.2 15.2l.2-1.5c-7.3-.9-13-6.7-13.9-13.9zM25.6 25.8c0 3.8 3.1 6.9 6.9 6.9 3.8 0 6.9-3.1 6.9-6.9 0-3.8-3.1-6.9-6.9-6.9-3.8 0-6.9 3.1-6.9 6.9zm6.9-5.4c3 0 5.4 2.4 5.4 5.4s-2.4 5.4-5.4 5.4-5.4-2.4-5.4-5.4 2.4-5.4 5.4-5.4z"></path></svg>
+                <svg
+                  viewBox="0 0 65 65"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M31.7 36.9h1.5v14.7h-1.5z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M58.3 25h-3C55 12.9 45.3 3.1 33.2 2.7V0h-1.5v2.8c-12 .3-21.8 10.1-22 22.2h-3v1.5h3c.9 15.4 21.4 37 22.3 37.9l.5.6.5-.6c.9-.9 21.4-22.5 22.3-37.9h3V25zM32.5 62.9C29.2 59.3 12 40 11.2 26.5h10.2V25H11.2c.3-11.3 9.3-20.4 20.6-20.8v10.4h1.5V4.3c11.2.4 20.2 9.5 20.5 20.7H43.6v1.5h10.2C53 40 35.8 59.3 32.5 62.9z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M48.5 23.6l1.5-.2c-1.1-7.9-7.3-14.1-15.2-15.1l-.2 1.5c7.2.9 13 6.6 13.9 13.8zM30.2 8.3c-7.9 1-14.1 7.3-15.2 15.1l1.5.2c1-7.2 6.7-12.9 13.9-13.9l-.2-1.4zM34.8 43.3c8-1 14.2-7.3 15.2-15.2l-1.5-.2c-.9 7.3-6.6 13-13.9 14l.2 1.4zM16.5 27.9l-1.5.2c1 7.9 7.3 14.2 15.2 15.2l.2-1.5c-7.3-.9-13-6.7-13.9-13.9zM25.6 25.8c0 3.8 3.1 6.9 6.9 6.9 3.8 0 6.9-3.1 6.9-6.9 0-3.8-3.1-6.9-6.9-6.9-3.8 0-6.9 3.1-6.9 6.9zm6.9-5.4c3 0 5.4 2.4 5.4 5.4s-2.4 5.4-5.4 5.4-5.4-2.4-5.4-5.4 2.4-5.4 5.4-5.4z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Find a Branch</span>
             </a>
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg"><path d="M42.7 18.3l1.5-.4c-.8-3.3-3.8-5.6-7.2-5.6-2 0-3.9.8-5.3 2.2l1.1 1.1c1.1-1.1 2.6-1.7 4.2-1.7 2.7-.1 5 1.8 5.7 4.4z"></path><path d="M53.1 18.4c-1.5 0-2.9.3-4.3.8-.6-6.2-5.8-11-12.1-11-5.5 0-10.3 3.7-11.7 9-1.6-1.1-3.5-1.8-5.5-1.8-4.9 0-8.9 3.8-9.3 8.6H9c-4.4 0-8.3 3.1-9.2 7.5l-.1.3c-.1.5-.1 1.1-.1 1.6 0 5.2 4.2 9.4 9.4 9.4h22.1v-1.5h-22c-4.3 0-7.9-3.5-7.9-7.9 0-.4 0-.9.1-1.3v-.3c.7-3.6 4-6.3 7.7-6.3h2.7v-.8c0-4.3 3.5-7.8 7.8-7.8 3.1 0 5.9 1.8 7.1 4.6l1.4-.6c-.4-1-1-1.8-1.7-2.6 1-5 5.3-8.6 10.4-8.6 5.9 0 10.6 4.8 10.6 10.6 0 1.1-.2 2.3-.5 3.3l1.4.5c.4-1.1.5-2.2.6-3.3 1.3-.6 2.8-.9 4.2-.9 5.9 0 10.6 4.8 10.6 10.6 0 5.9-4.8 10.6-10.6 10.6h-6.1v1.5H53c6.7 0 12.1-5.4 12.1-12.1.2-6.7-5.3-12.1-12-12.1z"></path><path d="M43.8 27.2h-9.4V47h-5l9.7 9.7 9.7-9.7h-5V27.2zm1.5 21.4l-6.1 6.1-6.2-6.1h3V28.7h6.4v19.8h2.9z"></path></svg>
+                <svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="currentColor"
+                    d="M42.7 18.3l1.5-.4c-.8-3.3-3.8-5.6-7.2-5.6-2 0-3.9.8-5.3 2.2l1.1 1.1c1.1-1.1 2.6-1.7 4.2-1.7 2.7-.1 5 1.8 5.7 4.4z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M53.1 18.4c-1.5 0-2.9.3-4.3.8-.6-6.2-5.8-11-12.1-11-5.5 0-10.3 3.7-11.7 9-1.6-1.1-3.5-1.8-5.5-1.8-4.9 0-8.9 3.8-9.3 8.6H9c-4.4 0-8.3 3.1-9.2 7.5l-.1.3c-.1.5-.1 1.1-.1 1.6 0 5.2 4.2 9.4 9.4 9.4h22.1v-1.5h-22c-4.3 0-7.9-3.5-7.9-7.9 0-.4 0-.9.1-1.3v-.3c.7-3.6 4-6.3 7.7-6.3h2.7v-.8c0-4.3 3.5-7.8 7.8-7.8 3.1 0 5.9 1.8 7.1 4.6l1.4-.6c-.4-1-1-1.8-1.7-2.6 1-5 5.3-8.6 10.4-8.6 5.9 0 10.6 4.8 10.6 10.6 0 1.1-.2 2.3-.5 3.3l1.4.5c.4-1.1.5-2.2.6-3.3 1.3-.6 2.8-.9 4.2-.9 5.9 0 10.6 4.8 10.6 10.6 0 5.9-4.8 10.6-10.6 10.6h-6.1v1.5H53c6.7 0 12.1-5.4 12.1-12.1.2-6.7-5.3-12.1-12-12.1z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M43.8 27.2h-9.4V47h-5l9.7 9.7 9.7-9.7h-5V27.2zm1.5 21.4l-6.1 6.1-6.2-6.1h3V28.7h6.4v19.8h2.9z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Downloads</span>
             </a>
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="47" height="33.5" viewBox="0 0 47 33.5"><style>.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#434a52}</style><path class="st0" d="M41.2 5.4c.6 0 1.1-.5 1.1-1.1v-.2c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zM31 11.9c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zm-14.9 1.6c-3.5 0-6.2-2.8-6.2-6.2s2.8-6.2 6.2-6.2c3.5 0 6.2 2.8 6.2 6.2s-2.8 6.2-6.2 6.2zm14.8-5c1 0 1.9.7 2.1 1.7h13.9v1.1H33c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-6.4c-1.3 2-3.5 3.4-6.2 3.4-4.1 0-7.3-3.3-7.3-7.3S12 0 16.1 0c2.7 0 5 1.4 6.3 3.6h16.5C39.1 2.7 40 2 41 2h.1c1 0 1.9.7 2.2 1.7H47v1.1h-3.7c-.2.9-1.1 1.7-2.1 1.7h-.1c-1.1 0-1.9-.7-2.2-1.7h-16c.4.8.5 1.7.5 2.6 0 1-.2 2-.6 2.8h5.9c.2-.9 1.1-1.7 2.1-1.7h.1zm8 9.9c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zm-3.1 6.5c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zM31 32.4c-.2-4.5-.7-9-.7-9.1 0-1-.3-2.1-.9-3.2-.6-1-1.6-1.8-2.8-2.2l-4.3-1.5-4.6 8.6h-3.3l-4.6-8.6L5.6 18c-1.2.4-2.2 1.2-2.8 2.2-.4.8-.9 2-.9 3.2 0 .1-.5 4.6-.7 9.1h4.6l.4-5.6 1 .1-.4 5.5h18.4l-.3-5.5 1.1-.1.4 5.5H31zM38.9 15c1 0 1.9.7 2 1.6h5.9v1.1h-5.9c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-8.1c.7.5 1.3 1.2 1.7 2 .7 1.2 1.1 2.4 1.1 3.5h2.2c.2-.9 1.1-1.7 2.1-1.7h.1c1.1 0 1.9.7 2.1 1.6h9v1.1h-9c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-2.1c.1 1.7.5 5.2.7 8.8v.6H0V33c.1-4.8.7-9.6.7-9.7 0-1.2.4-2.4 1.1-3.6.7-1.2 1.9-2.2 3.3-2.8l5.1-1.8L15 24h2l4.8-8.9 4.4 1.6h10.4c.2-.9 1.1-1.7 2.1-1.7h.2z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="47"
+                  height="33.5"
+                  viewBox="0 0 47 33.5"
+                >
+                  <style>
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <path
+                    class="st0"
+                    stroke="none"
+                    fill="currentColor"
+                    d="M41.2 5.4c.6 0 1.1-.5 1.1-1.1v-.2c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zM31 11.9c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zm-14.9 1.6c-3.5 0-6.2-2.8-6.2-6.2s2.8-6.2 6.2-6.2c3.5 0 6.2 2.8 6.2 6.2s-2.8 6.2-6.2 6.2zm14.8-5c1 0 1.9.7 2.1 1.7h13.9v1.1H33c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-6.4c-1.3 2-3.5 3.4-6.2 3.4-4.1 0-7.3-3.3-7.3-7.3S12 0 16.1 0c2.7 0 5 1.4 6.3 3.6h16.5C39.1 2.7 40 2 41 2h.1c1 0 1.9.7 2.2 1.7H47v1.1h-3.7c-.2.9-1.1 1.7-2.1 1.7h-.1c-1.1 0-1.9-.7-2.2-1.7h-16c.4.8.5 1.7.5 2.6 0 1-.2 2-.6 2.8h5.9c.2-.9 1.1-1.7 2.1-1.7h.1zm8 9.9c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zm-3.1 6.5c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zM31 32.4c-.2-4.5-.7-9-.7-9.1 0-1-.3-2.1-.9-3.2-.6-1-1.6-1.8-2.8-2.2l-4.3-1.5-4.6 8.6h-3.3l-4.6-8.6L5.6 18c-1.2.4-2.2 1.2-2.8 2.2-.4.8-.9 2-.9 3.2 0 .1-.5 4.6-.7 9.1h4.6l.4-5.6 1 .1-.4 5.5h18.4l-.3-5.5 1.1-.1.4 5.5H31zM38.9 15c1 0 1.9.7 2 1.6h5.9v1.1h-5.9c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-8.1c.7.5 1.3 1.2 1.7 2 .7 1.2 1.1 2.4 1.1 3.5h2.2c.2-.9 1.1-1.7 2.1-1.7h.1c1.1 0 1.9.7 2.1 1.6h9v1.1h-9c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-2.1c.1 1.7.5 5.2.7 8.8v.6H0V33c.1-4.8.7-9.6.7-9.7 0-1.2.4-2.4 1.1-3.6.7-1.2 1.9-2.2 3.3-2.8l5.1-1.8L15 24h2l4.8-8.9 4.4 1.6h10.4c.2-.9 1.1-1.7 2.1-1.7h.2z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Self Service</span>
             </a>
             <a href="help-centre.html" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="34.3" viewBox="0 0 45 34.3"><style>.st0{fill:#434a52}</style><path class="st0" d="M44 31.4l-1.4 1.9H2.5l-1.4-1.9v-.7H44v.7zm-19.1-8.1c0 .3-.2.5-.5.5h-1.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1.5c.3 0 .5.2.5.5zm7.5-10.7v7h-1.2v-6.9h1.2zm1.1 6.1v-5.4c1.2.2 2.1 1.3 2.1 2.5v.3c-.1 1.3-1 2.4-2.1 2.6zm-20.9-6.1h1.2v6.9h-1.2v-6.9zm-1.1.8v5.4c-1.2-.3-2.1-1.3-2.1-2.5V16c.1-1.3 1-2.3 2.1-2.6zM3.5 7c0-.8.7-1.6 1.6-1.6h7.5c-1.4 2.1-2.3 4.7-2.3 7.4-1.1.7-1.8 1.8-1.8 3.1v.3c0 1.9 1.4 3.3 3.1 3.6v.8h3.3v-9h-3.3v.8c-.1 0-.2 0-.3.1.3-6.3 5.3-11.3 11.2-11.3 6 0 10.9 5 11.2 11.3-.1 0-.2-.1-.3-.1v-.8H30v9h3.3v-.8c.1 0 .3-.1.4-.1v1.9c0 .7-.5 1.2-1.2 1.2h-6.8c-.2-.6-.8-1-1.4-1h-1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h1.5c.7 0 1.2-.4 1.4-1h6.8c1.2 0 2.2-1 2.2-2.2v-2.4c1.1-.5 1.8-1.6 1.8-2.9V16c0-1.3-.7-2.4-1.7-3.1-.1-2.7-.9-5.3-2.3-7.4H40c.8 0 1.6.7 1.6 1.6v22.7H3.5V7zm39 22.7V7c0-1.4-1.2-2.6-2.6-2.6h-8.2C29.4 1.7 26.1 0 22.5 0s-6.9 1.8-9.2 4.5H5c-1.4 0-2.6 1.2-2.6 2.6v22.7H0v2.1l1.9 2.5h41.2l1.9-2.5v-2.1l-2.5-.1z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="45"
+                  height="34.3"
+                  viewBox="0 0 45 34.3"
+                >
+                  <path
+                    class="st0"
+                    stroke="none"
+                    fill="currentColor"
+                    d="M44 31.4l-1.4 1.9H2.5l-1.4-1.9v-.7H44v.7zm-19.1-8.1c0 .3-.2.5-.5.5h-1.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5h1.5c.3 0 .5.2.5.5zm7.5-10.7v7h-1.2v-6.9h1.2zm1.1 6.1v-5.4c1.2.2 2.1 1.3 2.1 2.5v.3c-.1 1.3-1 2.4-2.1 2.6zm-20.9-6.1h1.2v6.9h-1.2v-6.9zm-1.1.8v5.4c-1.2-.3-2.1-1.3-2.1-2.5V16c.1-1.3 1-2.3 2.1-2.6zM3.5 7c0-.8.7-1.6 1.6-1.6h7.5c-1.4 2.1-2.3 4.7-2.3 7.4-1.1.7-1.8 1.8-1.8 3.1v.3c0 1.9 1.4 3.3 3.1 3.6v.8h3.3v-9h-3.3v.8c-.1 0-.2 0-.3.1.3-6.3 5.3-11.3 11.2-11.3 6 0 10.9 5 11.2 11.3-.1 0-.2-.1-.3-.1v-.8H30v9h3.3v-.8c.1 0 .3-.1.4-.1v1.9c0 .7-.5 1.2-1.2 1.2h-6.8c-.2-.6-.8-1-1.4-1h-1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h1.5c.7 0 1.2-.4 1.4-1h6.8c1.2 0 2.2-1 2.2-2.2v-2.4c1.1-.5 1.8-1.6 1.8-2.9V16c0-1.3-.7-2.4-1.7-3.1-.1-2.7-.9-5.3-2.3-7.4H40c.8 0 1.6.7 1.6 1.6v22.7H3.5V7zm39 22.7V7c0-1.4-1.2-2.6-2.6-2.6h-8.2C29.4 1.7 26.1 0 22.5 0s-6.9 1.8-9.2 4.5H5c-1.4 0-2.6 1.2-2.6 2.6v22.7H0v2.1l1.9 2.5h41.2l1.9-2.5v-2.1l-2.5-.1z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Help Centre</span>
             </a>
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="43.9" height="44.5" viewBox="0 0 43.9 44.5"><path d="M12.3 41.1l-.1-.5-11 2.9h-.1v-.2L4 32.5l-.1-.2C2 29.3 1 25.7 1 22c0-5.8 2.3-11 6.1-14.8S16.2 1 22 1s11 2.3 14.8 6.1c3.8 3.8 6.1 9 6.1 14.8s-2.3 11-6.1 14.8c-3.8 3.8-9 6.1-14.8 6.1-3.4 0-6.6-.8-9.5-2.3l-.2-.1-.2.1.2.6-.3.4c3 1.5 6.4 2.4 9.9 2.4 6.1 0 11.6-2.5 15.5-6.4 4-4 6.4-9.5 6.4-15.5 0-6.1-2.5-11.6-6.4-15.5C33.5 2.5 28 0 22 0S10.4 2.5 6.5 6.4c-4 4-6.4 9.5-6.4 15.5 0 4 1.1 7.7 2.9 10.9l.5-.2-.5-.1L.1 43.1c-.1.1-.1.2-.1.3v.3c.1.2.2.5.4.6.2.1.4.2.7.2h.3l11-2.9-.1-.5-.3.4.3-.4z"></path><path d="M34.9 15.4l-.3-.5-6.9 3.6v-2.7c0-.2-.1-.3-.2-.4-.1-.1-.3-.2-.4-.2H10c-.2 0-.3.1-.4.2-.1.1-.2.3-.2.4v13.7c0 .2.1.3.2.4s.3.2.4.2h17c.2 0 .3-.1.4-.2.1-.1.2-.3.2-.4v-2.6l7 3.7h.3c.2 0 .3-.1.4-.2.1-.1.2-.3.2-.4V15.1c-.1-.1-.1-.2-.2-.2s-.2-.1-.3-.1-.2 0-.3.1l.2.5.3.5-.3-.5v.6c.1 0 .2 0 .2-.1l-.2-.5v.6-.6l-.2.5c.1.1.2.1.3.1l-.1-.6-.2.5.2-.5-.4.3c.1.1.1.2.2.2l.2-.5-.4.3.4-.3-.5.2.5-.2-.5.1v14.6h.5l-.3-.3c-.1.1-.2.2-.2.3h.5l-.3-.3.3.3v-.5c-.1 0-.3.1-.3.2l.3.3v-.5.6l.1-.5-.1.5.3-.5-8.6-4.5v4.4h.4l-.3-.3c-.1.1-.2.2-.2.3h.5l-.3-.3.3.3v-.5c-.1 0-.3.1-.3.2l.3.3v-.5H10v.5l.3-.3c-.1-.1-.2-.2-.3-.2v.5l.3-.3-.3.3h.5c0-.1-.1-.3-.2-.3l-.3.3h.5V15.9H10l.3.3c.1-.1.2-.2.2-.3H10l.3.3-.3-.3v.5c.1 0 .3-.1.3-.2l-.3-.3v.5h17v-.5l-.3.3c.1.1.2.2.3.2v-.5l-.3.3.3-.3h-.5c0 .1.1.3.2.3l.3-.3h-.5v4.5l8.6-4.5-.2-.5z"></path></svg>
-
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="43.9"
+                  height="44.5"
+                  viewBox="0 0 43.9 44.5"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.3 41.1l-.1-.5-11 2.9h-.1v-.2L4 32.5l-.1-.2C2 29.3 1 25.7 1 22c0-5.8 2.3-11 6.1-14.8S16.2 1 22 1s11 2.3 14.8 6.1c3.8 3.8 6.1 9 6.1 14.8s-2.3 11-6.1 14.8c-3.8 3.8-9 6.1-14.8 6.1-3.4 0-6.6-.8-9.5-2.3l-.2-.1-.2.1.2.6-.3.4c3 1.5 6.4 2.4 9.9 2.4 6.1 0 11.6-2.5 15.5-6.4 4-4 6.4-9.5 6.4-15.5 0-6.1-2.5-11.6-6.4-15.5C33.5 2.5 28 0 22 0S10.4 2.5 6.5 6.4c-4 4-6.4 9.5-6.4 15.5 0 4 1.1 7.7 2.9 10.9l.5-.2-.5-.1L.1 43.1c-.1.1-.1.2-.1.3v.3c.1.2.2.5.4.6.2.1.4.2.7.2h.3l11-2.9-.1-.5-.3.4.3-.4z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M34.9 15.4l-.3-.5-6.9 3.6v-2.7c0-.2-.1-.3-.2-.4-.1-.1-.3-.2-.4-.2H10c-.2 0-.3.1-.4.2-.1.1-.2.3-.2.4v13.7c0 .2.1.3.2.4s.3.2.4.2h17c.2 0 .3-.1.4-.2.1-.1.2-.3.2-.4v-2.6l7 3.7h.3c.2 0 .3-.1.4-.2.1-.1.2-.3.2-.4V15.1c-.1-.1-.1-.2-.2-.2s-.2-.1-.3-.1-.2 0-.3.1l.2.5.3.5-.3-.5v.6c.1 0 .2 0 .2-.1l-.2-.5v.6-.6l-.2.5c.1.1.2.1.3.1l-.1-.6-.2.5.2-.5-.4.3c.1.1.1.2.2.2l.2-.5-.4.3.4-.3-.5.2.5-.2-.5.1v14.6h.5l-.3-.3c-.1.1-.2.2-.2.3h.5l-.3-.3.3.3v-.5c-.1 0-.3.1-.3.2l.3.3v-.5.6l.1-.5-.1.5.3-.5-8.6-4.5v4.4h.4l-.3-.3c-.1.1-.2.2-.2.3h.5l-.3-.3.3.3v-.5c-.1 0-.3.1-.3.2l.3.3v-.5H10v.5l.3-.3c-.1-.1-.2-.2-.3-.2v.5l.3-.3-.3.3h.5c0-.1-.1-.3-.2-.3l-.3.3h.5V15.9H10l.3.3c.1-.1.2-.2.2-.3H10l.3.3-.3-.3v.5c.1 0 .3-.1.3-.2l-.3-.3v.5h17v-.5l-.3.3c.1.1.2.2.3.2v-.5l-.3.3.3-.3h-.5c0 .1.1.3.2.3l.3-.3h-.5v4.5l8.6-4.5-.2-.5z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Video Authentication</span>
             </a>
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg"><path d="M4.9 41.7h1.5v1.5H4.9zM4.9 44.7h1.5v1.5H4.9zM33.9 32.3h1.5v1.5h-1.5zM51.1 32.3h1.5v1.5h-1.5zM59.7 32.3h1.5v1.5h-1.5zM55.4 32.3h1.5v1.5h-1.5zM38.2 32.3h1.5v1.5h-1.5zM46.8 32.3h1.5v1.5h-1.5zM42.5 32.3H44v1.5h-1.5zM26.2 24.9h11.2v-7.2H26.2v7.2zm1.5-5.7h8.2v4.2h-8.2v-4.2z"></path><path d="M62.1 13H24.6c-1.5 0-2.8 1.2-2.8 2.8v13.7h-4.1c-2 .1-3.8 1.1-4.9 2.7-.6.9-1.7 1.5-2.8 1.5H9l-.2-.2c-.5-.5-1.1-.7-1.8-.7-1.6.1-3.2.2-4.7.2v1.5c1.6 0 3.2-.1 4.8-.2.3 0 .5.1.7.2.1.1.2.2.2.4v12.7c0 .1-.1.3-.2.4-.2.2-.4.2-.7.2-2.3-.2-4.7-.2-7-.2v1.5c2.3 0 4.6.1 6.9.2h.2c.6 0 1.1-.2 1.5-.5.4 0 1.6.1 2.3.5l.6.3c.9.6 2 1.2 4.1 1.7 1 .2 3.3.3 5.6.3 3.3 0 6.7-.1 6.9-.1 1.6 0 2.8-1.3 2.8-2.8 0-.5-.1-1-.4-1.4 1.4-.2 2.4-1.4 2.4-2.8 0-.8-.3-1.5-.8-2 .7-.5 1.1-1.3 1.1-2.2 0-.5-.1-.9-.4-1.3h29.2c1.5 0 2.8-1.2 2.8-2.8V15.8c0-1.5-1.3-2.8-2.8-2.8zM16 50.2c-1.9-.4-2.8-1-3.7-1.5-.2-.1-.4-.2-.6-.4-.7-.4-1.6-.6-2.3-.6V35.1h.6c1.6 0 3.1-.8 4-2.1.9-1.3 2.4-2.1 4-2.1H30.2c-.3 1.6-1.8 2.9-3.3 2.9h-7.2v.7c0 .2-.1 5.5-5.3 6.5l.3 1.5c5.1-.9 6.2-5.4 6.4-7.2h.8v1.2c0 .8.4 1.6 1 2.1-.5.5-.8 1.2-.8 2s.4 1.6.9 2.1c-.6.5-.9 1.3-.9 2.1s.4 1.6.9 2.1c-.6.5-.9 1.3-.9 2.1 0 .5.2 1 .4 1.5-2.8 0-5.6 0-6.5-.3zm12.1.1l-3.3.1c-.7 0-1.3-.7-1.3-1.4s.6-1.3 1.3-1.3h3.3c.7 0 1.3.6 1.3 1.3.1.7-.5 1.3-1.3 1.3zm2.1-4.1h-5.3c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3h5.3c.7 0 1.3.6 1.3 1.3.1.7-.5 1.3-1.3 1.3zm1.6-5.5c0 .7-.6 1.3-1.3 1.3h-5.6c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3h5.6c.7-.1 1.3.5 1.3 1.3zm31.6-4.1c0 .7-.6 1.3-1.3 1.3H24.6c-.7 0-1.3-.6-1.3-1.3v-1.2h3.5c2.7 0 4.9-2.4 4.9-5.1v-.8h-8.5V15.8c0-.7.6-1.3 1.3-1.3H62c.7 0 1.3.6 1.3 1.3v20.8z"></path><path d="M50.8 18.6h9.7v1.5h-9.7zM47 22.5h13.5V24H47z"></path></svg>
+                <svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="currentColor"
+                    d="M4.9 41.7h1.5v1.5H4.9zM4.9 44.7h1.5v1.5H4.9zM33.9 32.3h1.5v1.5h-1.5zM51.1 32.3h1.5v1.5h-1.5zM59.7 32.3h1.5v1.5h-1.5zM55.4 32.3h1.5v1.5h-1.5zM38.2 32.3h1.5v1.5h-1.5zM46.8 32.3h1.5v1.5h-1.5zM42.5 32.3H44v1.5h-1.5zM26.2 24.9h11.2v-7.2H26.2v7.2zm1.5-5.7h8.2v4.2h-8.2v-4.2z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M62.1 13H24.6c-1.5 0-2.8 1.2-2.8 2.8v13.7h-4.1c-2 .1-3.8 1.1-4.9 2.7-.6.9-1.7 1.5-2.8 1.5H9l-.2-.2c-.5-.5-1.1-.7-1.8-.7-1.6.1-3.2.2-4.7.2v1.5c1.6 0 3.2-.1 4.8-.2.3 0 .5.1.7.2.1.1.2.2.2.4v12.7c0 .1-.1.3-.2.4-.2.2-.4.2-.7.2-2.3-.2-4.7-.2-7-.2v1.5c2.3 0 4.6.1 6.9.2h.2c.6 0 1.1-.2 1.5-.5.4 0 1.6.1 2.3.5l.6.3c.9.6 2 1.2 4.1 1.7 1 .2 3.3.3 5.6.3 3.3 0 6.7-.1 6.9-.1 1.6 0 2.8-1.3 2.8-2.8 0-.5-.1-1-.4-1.4 1.4-.2 2.4-1.4 2.4-2.8 0-.8-.3-1.5-.8-2 .7-.5 1.1-1.3 1.1-2.2 0-.5-.1-.9-.4-1.3h29.2c1.5 0 2.8-1.2 2.8-2.8V15.8c0-1.5-1.3-2.8-2.8-2.8zM16 50.2c-1.9-.4-2.8-1-3.7-1.5-.2-.1-.4-.2-.6-.4-.7-.4-1.6-.6-2.3-.6V35.1h.6c1.6 0 3.1-.8 4-2.1.9-1.3 2.4-2.1 4-2.1H30.2c-.3 1.6-1.8 2.9-3.3 2.9h-7.2v.7c0 .2-.1 5.5-5.3 6.5l.3 1.5c5.1-.9 6.2-5.4 6.4-7.2h.8v1.2c0 .8.4 1.6 1 2.1-.5.5-.8 1.2-.8 2s.4 1.6.9 2.1c-.6.5-.9 1.3-.9 2.1s.4 1.6.9 2.1c-.6.5-.9 1.3-.9 2.1 0 .5.2 1 .4 1.5-2.8 0-5.6 0-6.5-.3zm12.1.1l-3.3.1c-.7 0-1.3-.7-1.3-1.4s.6-1.3 1.3-1.3h3.3c.7 0 1.3.6 1.3 1.3.1.7-.5 1.3-1.3 1.3zm2.1-4.1h-5.3c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3h5.3c.7 0 1.3.6 1.3 1.3.1.7-.5 1.3-1.3 1.3zm1.6-5.5c0 .7-.6 1.3-1.3 1.3h-5.6c-.7 0-1.3-.6-1.3-1.3 0-.7.6-1.3 1.3-1.3h5.6c.7-.1 1.3.5 1.3 1.3zm31.6-4.1c0 .7-.6 1.3-1.3 1.3H24.6c-.7 0-1.3-.6-1.3-1.3v-1.2h3.5c2.7 0 4.9-2.4 4.9-5.1v-.8h-8.5V15.8c0-.7.6-1.3 1.3-1.3H62c.7 0 1.3.6 1.3 1.3v20.8z"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                   d="M50.8 18.6h9.7v1.5h-9.7zM47 22.5h13.5V24H47z"></path>
+                </svg>
               </div>
               <span class="footer-service-label">HabariPay</span>
             </a>
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="602.4" height="546.7" viewBox="0 0 602.4 546.7"><path d="M515.3 196.4c-50 0-87.1 17.6-87.1 39.8v270.6c0 23.2 37.1 39.8 87.1 39.8 50 0 87.1-17.6 87.1-39.8V236.3c0-23.2-37-39.9-87.1-39.9zM330 303c-3.7-8.3-7.4-16.7-13-25-15.7-27.8-35.2-51.9-54.7-76-17.6-21.3-35.2-44.5-50-67.6l-12 7.4c14.8 25 33.4 47.3 51 69.5 18.5 24.1 38 48.2 53.7 75.1 3.7 5.6 6.5 12 9.3 18.5-44.5 1.9-76 18.5-76 39.8v145.5c-57.5 16.7-126 5.6-172.3-25.9-23.2-15.7-50-44.5-52.8-91.7-2.8-55.6 28.7-96.4 61.2-139 21.3-27.8 44.5-56.5 56.5-90.8l-13-4.6c-12 32.4-33.4 60.2-54.7 88C31.7 267-2.6 310.5.2 371.7c1.9 41.7 22.2 76.9 58.4 101.9 34.3 24.1 78.8 36.1 124.2 36.1 19.5 0 38-2.8 56.5-7.4v4.6c0 23.2 37.1 39.8 87.1 39.8 50 0 87.1-17.6 87.1-39.8V343.8c-1-22.3-36.2-39.9-83.5-40.8zm185.3 230.7c-45.4 0-73.2-15.8-73.2-25.9v-30.6c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v30.6c0 10.2-27.8 25.9-73.2 25.9zm-189.9 0c-45.4 0-73.2-15.8-73.2-25.9v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 10.2-27.8 25.9-73.2 25.9zm189.9-52.8c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6V454c0 11.1-27.8 26.9-73.2 26.9zM325.4 479c-45.4 0-73.2-15.8-73.2-25.9v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 10.2-27.8 25.9-73.2 25.9zm189.9-52.8c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 11.2-27.8 26-73.2 26zm-189.9-1.8c-45.4 0-73.2-15.8-73.2-25.9V366c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 11.1-27.8 26-73.2 26zm189.9-52.8c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 11.1-27.8 26-73.2 26zm-189.9-1.9c-45.4 0-73.2-15.7-73.2-25.9 0-11.1 27.8-25.9 73.2-25.9s73.2 15.7 73.2 25.9-27.8 25.9-73.2 25.9zm189.9-51.9c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 10.3-27.8 26-73.2 26zm0-107.5c45.4 0 73.2 15.8 73.2 26 0 11.1-27.8 25.9-73.2 25.9s-73.2-15.8-73.2-25.9c0-11.1 27.8-26 73.2-26zm-290-99.1c3.7 0 6.5 2.8 6.5 6.5s-2.8 7.4-7.4 6.5H112.3c-3.7 0-6.5-2.8-6.5-6.5s2.8-6.5 6.5-6.5h113zM227.4 0c3.9 0 14.7.1 18.4 8.3 3.7 9.3-3.7 18.5-9.3 26.9l-1.9 2.8c-11.1 15.8-19.5 37.1-22.2 59.3l-13.9-1.9c3.7-24.1 12-48.2 25-65.8l1.9-2.8c1.9-2.8 6.5-9.3 7.4-12-.9-.9-1.8-.9-5.6-.9-4.6 0-10.2 3.7-15.7 8.3-9.3 6.5-21.3 15.7-36.1 10.2-5.6-.9-8.3-5.6-11.1-9.3-.4-.4-.7-.9-.9-1.3l-.1-.2c-.2-.4-.4-.9-.9-1.3-2.8-.9-4.6 0-9.3 4.6-4.6 4.6-12 11.1-22.2 10.2-3.7 0-8.3-2.8-12-5.6-5.6-3.7-10.2-6.5-13.9-4.6l-.9.9c-.9 3.7 7.4 16.7 13 25.9 9.3 15.7 19.5 31.5 17.6 45.4l-13.9-1.9c1.9-9.3-7.4-24.1-16.7-36.1-9.3-14.8-16.7-27.8-13.9-38 .9-2.8 2.8-6.5 8.3-9.3 11.1-5.6 21.3.9 27.8 5.6 1.9 1.9 4.6 3.7 5.6 3.7 4.6 0 7.4-1.8 12-6.5 5.6-4.6 13-11.1 24.1-7.4 2.8 1.9 5.6 4.6 7.4 7.4.9.9 3.7 4.6 4.6 4.6 8.3 2.8 13.9-.9 23.2-8.3 7.3-5.3 14.7-10.9 24-10.9h.2z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="602.4"
+                  height="546.7"
+                  viewBox="0 0 602.4 546.7"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M515.3 196.4c-50 0-87.1 17.6-87.1 39.8v270.6c0 23.2 37.1 39.8 87.1 39.8 50 0 87.1-17.6 87.1-39.8V236.3c0-23.2-37-39.9-87.1-39.9zM330 303c-3.7-8.3-7.4-16.7-13-25-15.7-27.8-35.2-51.9-54.7-76-17.6-21.3-35.2-44.5-50-67.6l-12 7.4c14.8 25 33.4 47.3 51 69.5 18.5 24.1 38 48.2 53.7 75.1 3.7 5.6 6.5 12 9.3 18.5-44.5 1.9-76 18.5-76 39.8v145.5c-57.5 16.7-126 5.6-172.3-25.9-23.2-15.7-50-44.5-52.8-91.7-2.8-55.6 28.7-96.4 61.2-139 21.3-27.8 44.5-56.5 56.5-90.8l-13-4.6c-12 32.4-33.4 60.2-54.7 88C31.7 267-2.6 310.5.2 371.7c1.9 41.7 22.2 76.9 58.4 101.9 34.3 24.1 78.8 36.1 124.2 36.1 19.5 0 38-2.8 56.5-7.4v4.6c0 23.2 37.1 39.8 87.1 39.8 50 0 87.1-17.6 87.1-39.8V343.8c-1-22.3-36.2-39.9-83.5-40.8zm185.3 230.7c-45.4 0-73.2-15.8-73.2-25.9v-30.6c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v30.6c0 10.2-27.8 25.9-73.2 25.9zm-189.9 0c-45.4 0-73.2-15.8-73.2-25.9v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 10.2-27.8 25.9-73.2 25.9zm189.9-52.8c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6V454c0 11.1-27.8 26.9-73.2 26.9zM325.4 479c-45.4 0-73.2-15.8-73.2-25.9v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 10.2-27.8 25.9-73.2 25.9zm189.9-52.8c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 11.2-27.8 26-73.2 26zm-189.9-1.8c-45.4 0-73.2-15.8-73.2-25.9V366c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 11.1-27.8 26-73.2 26zm189.9-52.8c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 11.1-27.8 26-73.2 26zm-189.9-1.9c-45.4 0-73.2-15.7-73.2-25.9 0-11.1 27.8-25.9 73.2-25.9s73.2 15.7 73.2 25.9-27.8 25.9-73.2 25.9zm189.9-51.9c-45.4 0-73.2-15.8-73.2-26v-32.4c14.8 11.1 41.7 17.6 73.2 17.6s58.4-7.4 73.2-17.6v32.4c0 10.3-27.8 26-73.2 26zm0-107.5c45.4 0 73.2 15.8 73.2 26 0 11.1-27.8 25.9-73.2 25.9s-73.2-15.8-73.2-25.9c0-11.1 27.8-26 73.2-26zm-290-99.1c3.7 0 6.5 2.8 6.5 6.5s-2.8 7.4-7.4 6.5H112.3c-3.7 0-6.5-2.8-6.5-6.5s2.8-6.5 6.5-6.5h113zM227.4 0c3.9 0 14.7.1 18.4 8.3 3.7 9.3-3.7 18.5-9.3 26.9l-1.9 2.8c-11.1 15.8-19.5 37.1-22.2 59.3l-13.9-1.9c3.7-24.1 12-48.2 25-65.8l1.9-2.8c1.9-2.8 6.5-9.3 7.4-12-.9-.9-1.8-.9-5.6-.9-4.6 0-10.2 3.7-15.7 8.3-9.3 6.5-21.3 15.7-36.1 10.2-5.6-.9-8.3-5.6-11.1-9.3-.4-.4-.7-.9-.9-1.3l-.1-.2c-.2-.4-.4-.9-.9-1.3-2.8-.9-4.6 0-9.3 4.6-4.6 4.6-12 11.1-22.2 10.2-3.7 0-8.3-2.8-12-5.6-5.6-3.7-10.2-6.5-13.9-4.6l-.9.9c-.9 3.7 7.4 16.7 13 25.9 9.3 15.7 19.5 31.5 17.6 45.4l-13.9-1.9c1.9-9.3-7.4-24.1-16.7-36.1-9.3-14.8-16.7-27.8-13.9-38 .9-2.8 2.8-6.5 8.3-9.3 11.1-5.6 21.3.9 27.8 5.6 1.9 1.9 4.6 3.7 5.6 3.7 4.6 0 7.4-1.8 12-6.5 5.6-4.6 13-11.1 24.1-7.4 2.8 1.9 5.6 4.6 7.4 7.4.9.9 3.7 4.6 4.6 4.6 8.3 2.8 13.9-.9 23.2-8.3 7.3-5.3 14.7-10.9 24-10.9h.2z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Investments</span>
             </a>
             <a href="#" class="footer-service-item">
               <div class="footer-service-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="63" height="62.7" viewBox="0 0 63 62.7"><style>.st0{fill-rule:evenodd;clip-rule:evenodd}</style><path class="st0" d="M47.5 6.6c1.5 0 2.7 1.2 2.7 2.7 0 1.4-1.2 2.7-2.7 2.7-1.5 0-2.7-1.2-2.7-2.7.1-1.5 1.2-2.7 2.7-2.7zm0 6.8c2.2 0 4.2-1.8 4.2-4.2C51.7 7 49.8 5 47.5 5c-2.2 0-4.2 1.8-4.2 4.2.1 2.3 2 4.2 4.2 4.2zm2.9.6c2.9 0 5.2 2.3 5.2 5.2v.8c1.8-2 2.9-4.6 2.9-7.5 0-6.1-4.9-11-11-11s-11 4.9-11 11c0 2.9 1.2 5.5 2.9 7.5v-.7c0-2.9 2.3-5.2 5.2-5.2h.6l2.2 4.2h.4L50 14h.4zm-1.8 5.6h-2.1l-2.2-4.2c-1.9.2-3.4 1.8-3.4 3.8v2c1.8 1.4 4.2 2.3 6.7 2.3s4.8-.9 6.7-2.3v-2c0-1.9-1.5-3.6-3.4-3.8l-2.3 4.2zM10.5 30.5c-1.2 0-2.1-1-2.1-2.1s1-2.1 2.1-2.1 2.1 1 2.1 2.1c0 1.3-1 2.1-2.1 2.1zm0-5.6c-1.9 0-3.6 1.6-3.6 3.6 0 1.9 1.5 3.6 3.6 3.6 2 0 3.6-1.6 3.6-3.6s-1.7-3.6-3.6-3.6zm2.4 7.4c2.4 0 4.5 2 4.5 4.5v.2c1.4-1.6 2.2-3.6 2.1-5.8 0-4.9-4.1-9-9-9s-9 4.1-9 9c0 2.2.8 4.3 2.1 5.8v-.2c0-2.4 2-4.5 4.5-4.5h.6l1.8 3.5h.2l1.8-3.5h.4zm-1.5 4.9H9.5l-1.8-3.5c-1.5.2-2.6 1.4-2.6 3v1.6c1.6 1.2 3.4 1.8 5.4 1.8 2 0 3.9-.7 5.4-1.8v-1.6c0-1.6-1.2-2.8-2.6-3l-1.9 3.5zm36.1 9.5c-1.9 0-3.6-1.6-3.6-3.6 0-1.9 1.6-3.6 3.6-3.6 1.9 0 3.6 1.6 3.6 3.6 0 2.1-1.6 3.6-3.6 3.6zm0-8.5c-2.7 0-4.9 2.2-4.9 4.9s2.2 4.9 4.9 4.9 4.9-2.2 4.9-4.9c.1-2.7-2.1-4.9-4.9-4.9zm3.7 11.1c3.5 0 6.4 2.9 6.4 6.4V57c2.4-2.6 4-6 4.1-9.8 0-7.8-6.3-14.1-14.1-14.1s-14.1 6.3-14.1 14.1c0 3.8 1.6 7.3 4 9.8v-1.4c0-3.5 2.9-6.4 6.4-6.4h.4l2.9 5.3h.8l2.8-5.2h.4zm-2.4 6.6h-2.5l-2.8-5.2C41 50.9 39 53 39 55.6v2.6c2.3 1.8 5.3 2.9 8.6 3 3.3 0 6.2-1.2 8.6-3v-2.6c0-2.6-2-4.7-4.6-4.9l-2.8 5.2zm-1.3-24.2c-6.2 0-11.4 3.6-14 8.8l-13.3-5.8c.4-1.2.7-2.4.7-3.7 0-1.1-.2-2.2-.5-3.2L36.9 19c2.2 3.5 6.1 5.8 10.6 5.8 6.9 0 12.5-5.6 12.5-12.5S54.4 0 47.5 0 35 5.6 35 12.5c0 1.9.5 3.8 1.3 5.3L20 26.6c-1.6-3.5-5.3-5.9-9.4-5.9C4.7 20.7 0 25.3 0 31.1c0 5.8 4.7 10.5 10.5 10.5 4 0 7.5-2.2 9.2-5.5L33 41.9c-.6 1.7-1 3.4-1 5.3 0 8.5 7 15.5 15.5 15.5S63 55.7 63 47.2s-7-15.5-15.5-15.5z"></path></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="63"
+                  height="62.7"
+                  viewBox="0 0 63 62.7"
+                >
+                  <style>
+                    .st0 {
+                      fill-rule: evenodd;
+                      clip-rule: evenodd;
+                    }
+                  </style>
+                  <path
+                    class="st0"
+                    fill="currentColor"
+                    d="M47.5 6.6c1.5 0 2.7 1.2 2.7 2.7 0 1.4-1.2 2.7-2.7 2.7-1.5 0-2.7-1.2-2.7-2.7.1-1.5 1.2-2.7 2.7-2.7zm0 6.8c2.2 0 4.2-1.8 4.2-4.2C51.7 7 49.8 5 47.5 5c-2.2 0-4.2 1.8-4.2 4.2.1 2.3 2 4.2 4.2 4.2zm2.9.6c2.9 0 5.2 2.3 5.2 5.2v.8c1.8-2 2.9-4.6 2.9-7.5 0-6.1-4.9-11-11-11s-11 4.9-11 11c0 2.9 1.2 5.5 2.9 7.5v-.7c0-2.9 2.3-5.2 5.2-5.2h.6l2.2 4.2h.4L50 14h.4zm-1.8 5.6h-2.1l-2.2-4.2c-1.9.2-3.4 1.8-3.4 3.8v2c1.8 1.4 4.2 2.3 6.7 2.3s4.8-.9 6.7-2.3v-2c0-1.9-1.5-3.6-3.4-3.8l-2.3 4.2zM10.5 30.5c-1.2 0-2.1-1-2.1-2.1s1-2.1 2.1-2.1 2.1 1 2.1 2.1c0 1.3-1 2.1-2.1 2.1zm0-5.6c-1.9 0-3.6 1.6-3.6 3.6 0 1.9 1.5 3.6 3.6 3.6 2 0 3.6-1.6 3.6-3.6s-1.7-3.6-3.6-3.6zm2.4 7.4c2.4 0 4.5 2 4.5 4.5v.2c1.4-1.6 2.2-3.6 2.1-5.8 0-4.9-4.1-9-9-9s-9 4.1-9 9c0 2.2.8 4.3 2.1 5.8v-.2c0-2.4 2-4.5 4.5-4.5h.6l1.8 3.5h.2l1.8-3.5h.4zm-1.5 4.9H9.5l-1.8-3.5c-1.5.2-2.6 1.4-2.6 3v1.6c1.6 1.2 3.4 1.8 5.4 1.8 2 0 3.9-.7 5.4-1.8v-1.6c0-1.6-1.2-2.8-2.6-3l-1.9 3.5zm36.1 9.5c-1.9 0-3.6-1.6-3.6-3.6 0-1.9 1.6-3.6 3.6-3.6 1.9 0 3.6 1.6 3.6 3.6 0 2.1-1.6 3.6-3.6 3.6zm0-8.5c-2.7 0-4.9 2.2-4.9 4.9s2.2 4.9 4.9 4.9 4.9-2.2 4.9-4.9c.1-2.7-2.1-4.9-4.9-4.9zm3.7 11.1c3.5 0 6.4 2.9 6.4 6.4V57c2.4-2.6 4-6 4.1-9.8 0-7.8-6.3-14.1-14.1-14.1s-14.1 6.3-14.1 14.1c0 3.8 1.6 7.3 4 9.8v-1.4c0-3.5 2.9-6.4 6.4-6.4h.4l2.9 5.3h.8l2.8-5.2h.4zm-2.4 6.6h-2.5l-2.8-5.2C41 50.9 39 53 39 55.6v2.6c2.3 1.8 5.3 2.9 8.6 3 3.3 0 6.2-1.2 8.6-3v-2.6c0-2.6-2-4.7-4.6-4.9l-2.8 5.2zm-1.3-24.2c-6.2 0-11.4 3.6-14 8.8l-13.3-5.8c.4-1.2.7-2.4.7-3.7 0-1.1-.2-2.2-.5-3.2L36.9 19c2.2 3.5 6.1 5.8 10.6 5.8 6.9 0 12.5-5.6 12.5-12.5S54.4 0 47.5 0 35 5.6 35 12.5c0 1.9.5 3.8 1.3 5.3L20 26.6c-1.6-3.5-5.3-5.9-9.4-5.9C4.7 20.7 0 25.3 0 31.1c0 5.8 4.7 10.5 10.5 10.5 4 0 7.5-2.2 9.2-5.5L33 41.9c-.6 1.7-1 3.4-1 5.3 0 8.5 7 15.5 15.5 15.5S63 55.7 63 47.2s-7-15.5-15.5-15.5z"
+                  ></path>
+                </svg>
               </div>
               <span class="footer-service-label">Pension</span>
             </a>
@@ -537,85 +705,135 @@
 
       <!-- Main Footer -->
       <div class="footer-main">
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-md-4 col-lg-2">
-              <h6>Personal</h6>
-              <ul>
-                <li><a href="#">Accounts</a></li>
-                <li><a href="#">Cards</a></li>
-                <li><a href="#">Loans</a></li>
-                <li><a href="#">Ways to Bank</a></li>
-                <li><a href="#">NRN Services</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <h6>Business</h6>
-              <ul>
-                <li><a href="#">SME Banking</a></li>
-                <li><a href="#">Corporate Banking</a></li>
-                <li><a href="#">International Trade</a></li>
-                <li><a href="#">Cash Management</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2">
-              <h6>About Us</h6>
-              <ul>
-                <li><a href="#">Our Company</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">CSR</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Corporate Governance</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <h6>Help &amp; Security</h6>
-              <ul>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Rate &amp; Fees Calculator</a></li>
-                <li><a href="#">Report Fraud</a></li>
-                <li><a href="#">Security Tips</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-4 col-lg-3">
-              <h6>Quick Links</h6>
-              <ul>
-                <li><a href="#">Online Banking</a></li>
-                <li><a href="#">Mobile Banking</a></li>
-                <li><a href="#">*737#</a></li>
-                <li><a href="#">Open an Account</a></li>
-                <li><a href="#">Locate a Branch</a></li>
-              </ul>
-            </div>
+        <div class="grid wrapper-grid">
+          <div class="">
+            <h6>Personal</h6>
+            <ul>
+              <li><a href="#">Savings Account</a></li>
+              <li><a href="#">Current Account</a></li>
+              <li><a href="#">Compare Accounts</a></li>
+              <li><a href="#">Cards</a></li>
+              <li><a href="#">Non Resident Nigerian (NRN) service</a></li>
+              <li><a href="#">Loans</a></li>
+              <li><a href="#">Ways to Bank</a></li>
+              <li><a href="#">Private Banking</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6>Business</h6>
+            <ul>
+              <li><a href="#">Business Banking</a></li>
+              <li><a href="#">Cards</a></li>
+              <li><a href="#">e-Banking Services</a></li>
+              <li><a href="#">Commercial Banking</a></li>
+              <li><a href="#">Corporate Banking</a></li>
+              <li><a href="#">Loans & Advances</a></li>
+              <li><a href="#">SME Banking</a></li>
+              <li><a href="#">HabariPay</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6>About Us</h6>
+            <ul>
+              <li><a href="#">Our Company</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Corporate Social Responsibility</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Squad by Habari</a></li>
+              <li><a href="#">Guarantee Trust Fund Managers</a></li>
+              <li><a href="#">Guarantee Trust Pension Managers</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6>Help &amp; Security</h6>
+            <ul>
+              <li><a href="#">Account Reactivation</a></li>
+              <li><a href="#">Complaints &amp; Enquiries</a></li>
+              <li><a href="#">Customer Feedback Survey</a></li>
+              <li><a href="#">Dispense Error</a></li>
+              <li><a href="#">Help Videos</a></li>
+              <li><a href="#">Self Service</a></li>
+              <li><a href="#">Security Center</a></li>
+              <li><a href="#">Whistle Blower</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#">Find a Branck/ATM</a></li>
+              <li><a href="#">All Branches</a></li>
+              <li><a href="#">All your banking forums in one place</a></li>
+              <li><a href="#">BVN Linking Portal</a></li>
+              <li><a href="#">Financial Calculators</a></li>
+              <li><a href="#">iRefer</a></li>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Internal Links</a></li>
+              <li><a href="#">Video Authentication</a></li>
+              <li><a href="#">Open an Account</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-connect">
+          <div><img src="./images/footer/gt-connect.png" alt=""></div>
+          <div class="grid">
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div> <span style="color: #2CB742; font-size: 1.2rem; margin-right: 0.5rem; transform: translateY(0.4rem);"><i class="fa-brands fa-whatsapp"></i></span><a href="tel:+234">+234 123 xxx xxx</a></div>
           </div>
         </div>
       </div>
 
       <!-- Footer Bottom -->
       <div class="footer-bottom">
-        <div class="container">
-          <p>&copy; 2024 Guaranty Trust Bank Ltd. All rights reserved.</p>
+        <div class="wrapper">
+          <p>&copy; 2026 Guaranty Trust Bank Limited. RC 152321 (Licensed by the Central Bank of Nigeria). All Rights Reserved.</p>
           <div class="footer-bottom-links">
             <a href="#">Terms &amp; Conditions</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Sitemap</a>
           </div>
+          <ul class="footer-bottom-icons">
+            <li title="facebook"><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="footer-floater">
+        <input type="checkbox" name="" id="floater-toggle" class="floater-toggle">
+        <label for="floater-toggle">
+          <span>
+            <span></span>
+            <span></span>
+          </span>
+        </label>
+        <div class="chatbox-area">
+          <label for="floater-toggle" class="x-label"><span>X</span></label>
+          <div class="chat-instruction-area">
+            <div class="top">
+              <span>G</span>
+              <p>GTBank Customer Support</p>
+            </div>
+            <p class="bottom">Need help? Chat with us</p>
+          </div>
+          <form class="floater-chat-form">
+            <textarea name="" id="" placeholder="Reply Here"></textarea>
+            <span>
+              <svg class="send-svg-icon" width="100%" height="93.4%" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.664883 0.0410893L15.3496 6.58575C15.44 6.61629 15.5192 6.67341 15.5767 6.74964C15.6342 6.82587 15.6674 6.91764 15.6719 7.01292C15.6765 7.1082 15.6521 7.20254 15.602 7.28358C15.5519 7.36462 15.4785 7.42858 15.3913 7.46706L0.686836 14.049C0.602379 14.087 0.508565 14.0993 0.417036 14.0844C0.325507 14.0695 0.240295 14.0281 0.171978 13.9652C0.103661 13.9024 0.0552472 13.821 0.0327455 13.731C0.0102438 13.641 0.0146473 13.5465 0.0454071 13.4591L1.7857 8.4458L9.67092 7.05677L1.80049 5.64719L0.0268337 0.629296C-0.00386483 0.542064 -0.00837696 0.447819 0.0138533 0.358191C0.0360839 0.268563 0.0840844 0.187472 0.151933 0.124923C0.219782 0.0623749 0.304509 0.0211062 0.395662 0.00620862C0.486814 -0.00868893 0.580404 0.00343656 0.664883 0.0410893Z" fill="currentColor"></path>
+              </svg>
+            </span>
+          </form>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Login tab switching
-      document.querySelectorAll(".login-tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          document
-            .querySelectorAll(".login-tab")
-            .forEach((t) => t.classList.remove("active"));
-          tab.classList.add("active");
-        });
-      });
-    </script>
   </body>
 </html>

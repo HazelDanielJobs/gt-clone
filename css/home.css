@@ -28,84 +28,127 @@
 
 .hero-slide {
   display: flex;
-  align-items: stretch;
-  min-height: 25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 7.2rem;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
 }
 
 .hero-slide-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   width: 60%;
-  padding: 3rem 2.5rem 3rem 0;
+  height: max-content;
+  /* background-color: blue; */
+  padding-top: calc(var(--top-spacing-here) * 1rem);
 }
 
-.hero-slide-image {
-  width: 40%;
-  background-color: #ddd;
-  background-size: cover;
-  background-position: center;
-  min-height: 25rem;
+.hero-slide-content > p {
+  width: 100%;
 }
 
-.hero-slide-content h2 {
-  font-size: 2rem;
+.hero-slide-content .hero-text-color-accent {
+  color: var(--text-active);
+}
+.hero-slide-content .hero-text-color-primary {
+  color: var(--text-primary);
+}
+
+.hero-slide-content > p > span {
+  display: block;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+  width: 22rem;
+}
+.hero-slide-content small {
+  display: block;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.hero-slide-content > a {
+  background-color: var(--bg-accent);
+  box-shadow: 1px 4px 6px #00000059;
+  padding: 1.1rem 2rem;
+  color: var(--text-white);
+  font-size: 0.9rem;
   font-weight: 700;
-  color: #424a52;
-  margin-bottom: 1rem;
-}
-
-.hero-slide-content p {
-  color: #696f73;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 /* Login overlay on the homepage hero */
 .login-overlay {
   position: absolute;
   top: 1.5rem;
-  right: 0.9375rem;
-  width: 18.75rem;
+  right: 10%;
+  /* width: 14.75rem; */
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
   z-index: 10;
   padding: 0;
 }
 
+.login-overlay .overlay-title {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--text-primary);
+  width: 16rem;
+}
+
 .login-overlay .login-tabs {
   display: flex;
+  padding: 0 2rem;
+  background-color: var(--bg-primary);
+  padding-top: 0.8rem;
 }
 
 .login-overlay .login-tab {
   flex: 1;
-  padding: 0.875rem 1rem;
+  padding: 0.475rem 1rem;
   text-align: center;
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
-  background: #f0f0f1;
   color: #696f73;
   border: none;
   border-bottom: 3px solid transparent;
   transition: all 0.2s;
+  background: none !important;
 }
 
 .login-overlay .login-tab.active {
-  background: #fff;
-  color: #dd4f05;
-  border-bottom-color: #dd4f05;
+  /* background: #fff; */
+  color: var(--text-active);
+  border-bottom-color: var(--bg-accent);
 }
 
 .login-overlay .login-body {
   padding: 1.5rem;
   text-align: center;
+  background-color: #e2e2e285;
 }
 
-.login-overlay .login-body .btn {
-  width: 100%;
+.login-overlay .login-body .btn_ {
+  width: 80%;
   padding: 0.875rem;
   font-size: 1rem;
   margin-bottom: 1rem;
+  background-color: var(--bg-accent);
+  color: var(--text-white);
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem auto;
+  margin-bottom: 1.5rem;
+  box-shadow: 2px 4px 6px #00000059;
 }
 
 .login-overlay .login-links {
@@ -113,6 +156,8 @@
   justify-content: center;
   gap: 1.5rem;
   font-size: 13px;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 .login-overlay .login-links a {
@@ -154,15 +199,25 @@
    HOME PAGE - PRODUCTS SECTION
    ============================================ */
 .section-products {
-  padding: 3.75rem 0;
+  padding-top: 8rem;
 }
 
 .section-products .section-title {
-  font-size: 1.75rem;
-  font-weight: 700;
+  font-size: 2.2rem;
+  font-weight: 600;
   color: #424a52;
   margin-bottom: 2.5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-products .section-title p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 24rem;
+  color: var(--text-secondary);
 }
 
 .product-card {
