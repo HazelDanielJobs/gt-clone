@@ -1,0 +1,237 @@
+.section-banner {
+  position: relative;
+  background: #f7f8f8;
+  padding: 0 !important;
+  width: 100vw;
+}
+.section-banner .wrapper {
+  position: relative;
+  width: 100% !important;
+  overflow: hidden;
+  position: relative;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section-banner .section-banner-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(/images/personal-banking/hero-image.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  top: 0;
+  left: 0;
+}
+
+.section-banner-modal {
+  position: relative;
+  margin-left: 7rem;
+  padding: 2.5rem;
+  max-width: 30rem;
+  z-index: 1;
+}
+
+.section-banner-modal > * {
+  position: relative;
+}
+
+.section-banner-modal::before {
+  position: absolute;
+  content: "";
+  background-color: var(--text-white);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.section-banner-modal h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  width: 95%;
+}
+
+.section-banner-modal p {
+  font-size: 1.1rem;
+}
+
+.section-banner-modal a {
+  display: inline-block;
+  background-color: var(--bg-accent);
+  box-shadow: 1px 4px 6px #00000059;
+  padding: 1.1rem 2.4rem;
+  color: var(--text-white);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 0.6rem;
+}
+
+section.section-checkpoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 7rem;
+}
+
+section.section-checkpoint h2 {
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+section.section-checkpoint .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+  background-color: var(--bg-primary);
+}
+
+section.section-checkpoint .wrapper > div {
+  width: 10rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px #00000028;
+  border: 1px solid #00000017;
+  background-color: var(--text-white);
+}
+
+section.section-checkpoint .wrapper a {
+  color: var(--text-primary);
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.2rem;
+}
+
+section.section-checkpoint .wrapper > div:hover a {
+  color: var(--bg-accent);
+}
+
+section.pb-content-block {
+  padding: 4rem 7rem;
+  position: relative;
+}
+
+section.pb-content-block::before {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 80%;
+  height: 1px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: #00000017;
+}
+
+section.pb-content-block.last::before {
+  display: none;
+}
+
+section.pb-content-block .wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pb-content-left {
+  width: 22rem;
+}
+.pb-content-left h2 {
+  margin-bottom: 1.5rem;
+}
+.pb-content-left a {
+  padding: 0.8rem 1.6rem;
+}
+
+.pb-content-right {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  gap: 2rem;
+}
+
+.pb-content-right-image {
+  width: 22rem;
+  min-height: auto;
+}
+
+.pb-content-right ul {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.pb-content-right li {
+  /* background-color: red; */
+  padding: 1rem 1.5rem;
+  box-shadow: 1px 2px 2px #0000001f;
+  border-radius: 3px;
+  border: 1px solid #00000017;
+  width: clamp(20rem, 22rem, 90vw);
+}
+.pb-content-right li a {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+  /* background-color: red; */
+}
+
+.pb-content-right li span {
+  transition: all 0.2s linear;
+}
+
+.pb-content-right li:hover span {
+  transform: translateX(5px);
+}
+.pb-content-right li:hover a {
+  color: var(--bg-accent-dark);
+}
+
+section.private-banking {
+  padding: 4rem 7rem;
+  background-color: var(--bg-primary);
+  backdrop-filter: opacity(0.2);
+}
+
+section.private-banking .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.prb-content-left {
+  position: relative;
+  width: 22rem;
+}
+.prb-content-left p {
+  font-size: 1.1rem;
+}
+
+.prb-content-image {
+  flex: 1;
+}
+
+.prb-content-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
