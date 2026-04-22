@@ -1,0 +1,42 @@
+.section-banner .section-banner-image {
+  background-image: url(/images/business-banking/hero-bg.webp);
+}
+
+.bs-trio-divs .pns-item {
+  align-items: center !important;
+
+
+}
+.bs-trio-divs .pns-item .pns-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--bg-accent);
+}
+
+.bs-trio-divs .pns-item .pns-title span {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.bs-trio-divs .pns-item .pns-title span svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.bs-trio-divs .pns-item .pns-title h3 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.4rem;
+
+}
+.bs-trio-divs .pns-item p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+.bs-trio-divs .pns-item a {
+  margin-top: 1rem;
+}
