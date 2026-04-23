@@ -1,47 +1,154 @@
-/* ============================================
-   ABOUT PAGE - CONTENT CARDS
-   ============================================ */
-.section-about-cards {
-  padding: 3.75rem 0;
+.section-banner-modal {
+  padding-bottom: 1rem;
+  max-width: 30.5rem;
 }
 
-.about-card {
-  display: block;
-  background: #fff;
-  border: 1px solid #e0e1e2;
-  margin-bottom: 1.875rem;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
-  color: inherit;
-  overflow: hidden;
+.section-banner-modal h2 {
+  letter-spacing: 0.1pt;
 }
 
-.about-card:hover {
-  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
-  color: inherit;
+.section-banner .section-banner-image {
+  background-image: url(/images/about/hero-image.webp);
 }
 
-.about-card-image {
+.about-content {
+  background-color: var(--bg-primary);
+}
+
+.about-content .wrapper {
   width: 100%;
-  height: 13.75rem;
-  background-color: #e0e1e2;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem 0;
+  gap: 8rem;
 }
 
-.about-card-body {
-  padding: 1.5rem;
+.about-content .about-content-first {
+  width: clamp(20rem, 39rem, 90vw);
 }
 
-.about-card-body h5 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #424a52;
-  margin-bottom: 0.75rem;
+.about-content .about-content-first h2 {
+  font-size: 1.45rem;
+  margin-bottom: 2rem;
 }
 
-.about-card-body p {
-  font-size: 14px;
-  color: #696f73;
-  margin-bottom: 1rem;
+.about-content .about-content-paragraphs {
+  display: flex;
+  flex-direction: column;
+}
+.about-content .about-content-first p {
+  font-size: 1.1rem;
+}
+.about-content .about-content-second {
+  width: clamp(20rem, 22rem, 90vw);
+}
+
+.about-content .about-content-second > div {
+  background-color: var(--text-white);
+  height: 3.2rem;
+  border: thin solid #e0dedee5;
+  padding: 0.8rem 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.media-center-news {
+  background-color: var(--bg-primary);
+  padding: 6rem 8.5%;
+}
+
+.media-center-news .wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-center-news > h3 {
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: start;
+  font-weight: 600;
+}
+
+.media-center-news .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  list-style-type: none;
+  padding: unset;
+}
+.media-center-news .wrapper ul li {
+  border-bottom: thin solid #e0dedee5;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.media-center-news .wrapper span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a7a4a4;
+}
+
+.media-center-news .wrapper a {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  font-weight: 300;
+}
+
+.media-center-news a.gt-accent-btn#about {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-white);
+  font-weight: 600;
+  padding: 0.8rem 1.8rem;
+}
+
+.media-center-news a.gt-accent-btn#about span {
+  color: inherit;
+}
+
+.more-from-gt {
+  padding: 4.3rem 8.5%;
+}
+
+.more-from-gt h3 {
+  font-size: 1.13rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.more-from-gt .wrapper {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.more-from-gt .wrapper > div {
+  width: 12.2rem;
+  height: 9.5rem;
+  margin-left: clamp(0.5rem, 1%, 10rem);
+  box-shadow: 1px 1px 4px #cecece;
+  border: thin solid #dad6d6;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.more-from-gt .wrapper > div img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+.more-from-gt .wrapper > div p {
+  font-size: 0.85rem;
 }
