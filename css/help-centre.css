@@ -1,128 +1,372 @@
-/* ============================================
-   HELP CENTRE - CATEGORY TABS
-   ============================================ */
-.section-help-tabs {
-  padding: 3rem 0;
-  background: #fff;
+.section-banner {
+  padding: 6vw 8vw !important;
 }
 
-.help-tabs-grid {
-  display: flex;
-  justify-content: center;
-  gap: 1.25rem;
-  flex-wrap: wrap;
+.section-banner>.container {
+  position: absolute;
+  top: 0.5rem;
+  left: 8vw;
+  width: 100%;
+  height: 3rem;
+  /* background-color: red; */
+  padding-left: 0;
 }
 
-.help-tab-item {
+.section-banner-image {
+  background: url("/images/help-center/hero-image.webp") !important;
+  background-position: 20% !important;
+  background-size: cover !important;
+}
+
+.section-banner .wrapper {
+  justify-content: flex-start;
+  padding-top: 2.5rem;
+  height: 25rem;
+}
+
+.section-banner-modal {
+  margin-left: 2.5rem;
+}
+
+.section-banner-modal > span {
+  display: inline-block;
+  color: var(--bg-accent);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+section.service-tabs {
+  width: 100%;
+  padding: 0 8vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  width: 12.5rem;
-  background: #f7f8f8;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  color: inherit;
+  padding-bottom: 4rem;
 }
 
-.help-tab-item:hover,
-.help-tab-item.active {
-  border-color: #dd4f05;
-  color: inherit;
-}
-
-.help-tab-item .tab-icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  background: #dd4f05;
-  border-radius: 50%;
+section.service-tabs form {
+  margin-bottom: 8rem;
+  width: clamp(20rem, 45rem, 90vw);
+  margin: 6rem auto;
+  overflow: hidden;
+  height: 4.8rem;
+  border-radius: 0.8rem;
   display: flex;
   align-items: center;
+  border: thin solid #0000001c;
+}
+
+section.service-tabs form span {
+  color: var(--text-primary);
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 1.5rem;
+}
+
+section.service-tabs form span a {
+  display: inline-block;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.6;
+  transform: scale(0.8);
+}
+
+section.service-tabs input {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  color: var(--text-primary);
+}
+
+section.service-tabs input::placeholder {
+  font-size: 1.1rem;
+}
+
+section.service-tabs ul {
+  display: flex;
+  width: clamp(max-content, max-content, 100%);
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+section.service-tabs li {
+  border: thin solid #0000001c;
+  width: 14rem;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 0.75rem;
+  padding: 2rem;
+  gap: 1.5rem;
+  cursor: pointer;
+  position: relative;
 }
 
-.help-tab-item .tab-icon span {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
+section.service-tabs li.active {
+  background-color: var(--bg-primary);
+  border: thin solid var(--bg-accent);
+  overflow: visible;
 }
 
-.help-tab-item .tab-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #424a52;
-  line-height: 1.3;
+section.service-tabs li.active::before {
+  width: 2.5rem;
+  height: 1px;
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  background-color: var(--bg-primary);
+  z-index: 1;
 }
 
-/* ============================================
-   HELP CENTRE - FAQ ACCORDION
-   ============================================ */
-.section-faq {
-  padding: 3rem 0 3.75rem;
+section.service-tabs li.active::after {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  bottom: -1rem;
+  border: thin solid var(--bg-accent);
+  background-color: var(--bg-primary);
+  transform: rotateZ(45deg);
+  z-index: -1;
 }
 
-.section-faq .section-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #424a52;
-  margin-bottom: 2rem;
+section.service-tabs li span {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.1s;
+}
+
+section.service-tabs li.active span,
+section.service-tabs li:hover span {
+  color: var(--bg-accent);
+}
+
+section.service-tabs li p {
+  width: 100%;
+  font-size: 0.95rem;
+  text-align: center;
+}
+section.service-tabs li.active p {
+  color: var(--text-primary);
+}
+
+.faq-heading {
+  width: 100%;
+  background-color: var(--bg-primary);
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-heading h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.faq-heading > div {
+  height: 2.8rem;
+  display: flex;
+  border: thin solid var(--text-primary);
+}
+
+.faq-heading > div span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.faq-heading > div span:hover {
+  background-color: var(--text-secondary);
+  color: var(--text-white);
+}
+
+.faq-heading > div span:first-of-type {
+  background-color: var(--text-secondary);
+  color: var(--text-white);
+}
+
+.faq-accordion-container {
+  width: 100%;
+  padding: 6vw 8vw !important;
+}
+
+.faq-accordion {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  place-items: start;
+  justify-content: center;
 }
 
 .accordion-item {
-  border-top: 1px solid #e3e4e5;
-  border-bottom: 1px solid #e3e4e5;
-  margin-top: -1px;
+  list-style-type: none;
+  height: max-content;
+  cursor: pointer;
+  width: clamp(100%, 34rem, 100%);
 }
 
-.accordion-question {
+.accordion-item > p,
+.accordion-item .accordion-content {
+  width: 100%;
+  height: 0 !important;
+  /* opacity: 0; */
+  transition: all 0.2s linear;
+  padding: 0 2rem;
+  overflow: hidden;
+  margin: 0;
+  border-left: 4px solid #0000003a;
+}
+.accordion-item h2 {
+  width: 90%;
+  height: 4rem;
+  background-color: white;
+  border-top: thin solid #0000003a;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.05rem;
+  text-align: start;
   position: relative;
-  padding: 0.875rem 2.5rem 0.9375rem 0;
-  font-size: 15px;
   font-weight: 600;
+  margin: unset;
+  color: var(--text-secondary);
+}
+
+.accordion-item input {
+  display: none;
+}
+
+.accordion-item label {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
   cursor: pointer;
-  color: #4c535b;
-  letter-spacing: -0.015em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.accordion-item label .label-inner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  transform: scale(0.8);
+  margin-right: -1.5rem;
+}
+
+.accordion-item label .label-inner span {
+  width: 80%;
+  height: 2px;
+  background-color: var(--text-primary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+}
+
+.accordion-item label .label-inner span:last-of-type {
+  transform: rotateZ(90deg) translateY(-48%);
+  transform-origin: center;
+}
+
+li.accordion-item:has(input:checked) p,
+li.accordion-item:has(input:checked) .accordion-content {
+  height: max-content !important;
+  opacity: 1;
+  margin-top: 1rem;
+  margin: 1rem 0;
+}
+
+li.accordion-item:has(input:checked) .label-inner span:last-of-type {
+  opacity: 0;
+}
+
+.accordion-content ul {
+  list-style-type: disc;
+  list-style-image: url("/icons/list-bullet.svg");
+  margin-bottom: 1rem;
+}
+
+.accordion-content h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+.accordion-content p {
+  color: var(--text-primary);
+}
+.accordion-content strong {
+  font-weight: bold;
+  color: #333;
+  display: inline;
+}
+.accordion-content .nb {
+  font-style: italic;
+}
+
+.satisfaction-feedback-link-area {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.8rem 2rem;
+  border: thin solid #0000003a;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.accordion-question .toggle-icon {
-  color: #7a8086;
-  font-size: 18px;
-  font-weight: 400;
-  flex-shrink: 0;
-  width: 1.5rem;
-  text-align: center;
+.satisfaction-feedback-link-area > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.accordion-answer {
-  border-left: 0.25rem solid #d9dbdc;
-  padding: 0.5rem 2.8125rem 0.0625rem 1.5625rem;
-  margin-bottom: 1.125rem;
-  display: none;
+.satisfaction-feedback-link-area h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
-.accordion-item.open .accordion-answer {
-  display: block;
+.satisfaction-feedback-link-area p {
+  font-size: 0.95rem;
+}
+.satisfaction-feedback-link-area .complaints-enquiries-btn {
+  padding: 0.8rem 2rem !important;
 }
 
-.accordion-item.open .toggle-icon .plus {
-  display: none;
+.satisfaction-feedback-link-area .complaints-enquiries-btn:hover {
+  background-color: var(--bg-accent-dark);
 }
 
-.accordion-item .minus {
-  display: none;
-}
-
-.accordion-item.open .minus {
-  display: inline;
-}
-
-.accordion-item:not(.open) .plus {
-  display: inline;
+.satisfaction-feedback-link-area div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

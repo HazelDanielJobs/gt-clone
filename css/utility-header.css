@@ -107,6 +107,10 @@
   border-radius: 50%;
 }
 
+.utility-nav a>span:last-child {
+  font-size: 0.5rem;
+}
+
 .utility-nav .flag-icon .flag-icon-inner {
   position: absolute;
   content: "";

@@ -53,6 +53,64 @@
   justify-content: flex-end;
 }
 
+section.learn-more {
+  padding: 6rem 8.5%;
+}
+
+section.learn-more .wrapper {
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 2rem;
+}
+
+section.learn-more>h2 {
+  font-size: 1.2rem;
+}
+
+section.learn-more .learn-more-card {
+  min-width: clamp(16rem, 16rem, 90vw);
+  border: thin solid #e0dedee5;
+  border-radius: 2px;
+  box-shadow: 1px 2px 4px #dad6d6;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section.learn-more .learn-more-card .learn-more-icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  color: var(--bg-accent);
+}
+
+section.learn-more .learn-more-card h3 {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+section.learn-more .learn-more-card p {
+  font-size: 0.9rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+section.learn-more .learn-more-card a.gt-accent-btn {
+  justify-self: flex-end;
+  margin-top: auto;
+  padding: unset;
+  color: var(--bg-accent);
+  background-color: unset;
+  box-shadow: unset;
+}
+
 .media-center-news {
   background-color: var(--bg-primary);
   padding: 6rem 8.5%;
@@ -129,6 +187,7 @@
   width: 100%;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .more-from-gt .wrapper > div {
