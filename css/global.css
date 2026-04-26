@@ -58,7 +58,6 @@ body {
   --text-active: #dd5006;
 }
 
-
 @media screen and (min-width: 0px) and (max-width: 360px) {
   .screen-lg {
     display: none;
@@ -92,5 +91,40 @@ body {
   }
   .screen-sm {
     display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+  .sm-justify-center {
+    justify-items: center !important;
+    justify-content: center !important;
+  }
+
+  .sm-align-center {
+    align-items: center !important;
+    place-items: center !important;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+  .md-justify-center {
+    justify-items: center !important;
+    justify-content: center !important;
+  }
+
+  .md-align-center {
+    align-items: center !important;
+    place-items: center !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .lg-justify-center {
+    justify-items: center !important;
+    justify-content: center !important;
+  }
+  .lg-align-center {
+    align-items: center !important;
+    place-items: center !important;
   }
 }

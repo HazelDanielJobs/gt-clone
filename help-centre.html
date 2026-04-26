@@ -33,7 +33,7 @@
 
   <body>
     <!-- ============ ANNOUNCEMENT BANNER ============ -->
-    <div class="announcement-banner">
+    <div class="announcement-banner screen-lg">
       <div class="container">
         <div class="banner-title">Important Notice:</div>
         <p>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- ============ UTILITY HEADER ============ -->
-    <div class="utility-header">
+    <div class="utility-header screen-lg">
       <div class="_container">
         <ul class="utility-nav">
           <li>
@@ -54,14 +54,14 @@
               <span class="flag-icon">
                 <span class="flag-icon-inner"></span>
               </span>
-            <span><i class="fa-solid fa-chevron-down"></i></span>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
             </a>
           </li>
           <li>
             <a href="#">Locate <span class="caret"></span></a>
           </li>
           <li><a href="#">Media</a></li>
-          <li><a href="help-centre.html" class="active">Help Centre</a></li>
+          <li><a href="help-centre.html">Help Centre</a></li>
           <li><a href="#">Security</a></li>
           <li>
             <a href="#" aria-label="Search" class="search-icon_">
@@ -102,11 +102,11 @@
     </div>
 
     <!-- ============ MAIN NAVIGATION ============ -->
-    <nav class="main-nav">
+    <nav class="main-nav screen-lg">
       <div class="container">
         <ul class="main-nav-links">
           <li>
-            <a href="index.html" class="home-icon_" aria-label="Home">
+            <a href="index.html" class="home-icon_ active" aria-label="Home">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -139,8 +139,99 @@
       </div>
     </nav>
 
+    <nav class="smaller-screen-nav screen-md">
+      <div class="announcement-banner">
+        <div class="container">
+          <div class="banner-title">Important Notice:</div>
+          <p>
+            Please be mindful of fake sites run by fraudulent parties posing as
+            Guaranty Trust Bank Ltd or its affiliates. Do not disclose your
+            personal information and financial details to anyone online or
+            anywhere else.
+          </p>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="menu-controls">
+          <input type="checkbox" name="" id="mobile-menu-controls" />
+
+          <div class="hamburger">
+            <div class="open" role="button">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="close" role="button"><span></span><span></span></div>
+            <div class="menu-toggle">
+              <label for="mobile-menu-controls"> </label>
+            </div>
+          </div>
+          <a href="#" aria-label="Search" class="search-icon_">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 18 18"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.18 13.24c1.172-1.41 1.91-3.22 1.91-5.2C16.09 3.62 12.47 0 8.044 0S0 3.62 0 8.04c0 4.43 3.62 8.05 8.045 8.05a7.915 7.915 0 0 0 5.195-1.91l3.62 3.62c.134.13.302.2.47.2a.683.683 0 0 0 .47-.2.65.65 0 0 0 0-.94l-3.62-3.62zm-6.135 1.54c-3.687 0-6.704-3.01-6.704-6.7 0-3.69 3.017-6.71 6.704-6.71s6.704 3.02 6.704 6.71-3.017 6.7-6.704 6.7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="online-banking-btn">
+            <span id="shopping-bag-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="78%"
+                height="100%"
+                viewBox="0 0 14 18"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.625 6H0v12h14V6H2.625zM1.5 7.5h11v9h-11v-9zM6.993 0c2.19-.004 4 1.805 4.007 4.04V6H3V4.053C2.998 1.818 4.803.008 6.993 0zm.003 1.5a2.538 2.538 0 0 0-2.541 2.553V6h5.09V4.043A2.538 2.538 0 0 0 6.996 1.5z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            Login
+          </a>
+
+          <div class="logo">
+            <img src="./icons/logo.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="">Home</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">Personal</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">Business</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">About Us</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">Open an Account</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <!-- ============ BREADCRUMB ============ -->
-    
+
     <!-- ============ HERO BANNER ============ -->
     <section class="section-banner">
       <div class="container">
@@ -156,7 +247,9 @@
           <h2>Help Center</h2>
           <span>We're Here To Help</span>
           <p>
-            This is your first port of call whenever you need assistance with using our products and services, even the simplest banking operations.
+            This is your first port of call whenever you need assistance with
+            using our products and services, even the simplest banking
+            operations.
           </p>
         </div>
       </div>
@@ -164,7 +257,7 @@
 
     <section class="service-tabs">
       <form action="">
-        <input type="text" name="" id="" placeholder="I need help with...">
+        <input type="text" name="" id="" placeholder="I need help with..." />
         <span>
           <a href="#" aria-label="Search" class="search-icon_">
             <svg
@@ -182,25 +275,118 @@
           </a>
         </span>
       </form>
-      <ul>
+      <ul class="md-align-center md-justify-center">
         <li class="active">
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 63 54.1"><style>.st0{fill-rule:evenodd;clip-rule:evenodd}</style><path class="st0" fill="currentColor" d="M55.7 10.7c-.2-.9-.5-1.5-.9-2.1-.4-.5-1-.9-1.6-1.2-.8-.3-1.5-.4-2.2-.4-1.2 0-2.3.4-3.2 1.2-.6.6-1.1 1.4-1.5 2.6h9.4zm-33 3H24v-3.4h-1.4v3.4zm4.5 0h1.4v-3.4h-1.4v3.4zm4.4 0H33v-3.4h-1.4v3.4zm8-5.6l-9.5-6.4L9.5 15.5h30c-.4-1.1-.5-2.3-.5-3.5 0-1.4.2-2.7.6-3.9zm6.6 4c0 1.5.5 2.7 1.4 3.6.9.9 2 1.4 3.3 1.4.6 0 1.3-.1 1.9-.3.6-.2 1.1-.5 1.5-.9.4-.4.9-1 1.4-1.8l1.4.7c-.4.9-1 1.6-1.5 2.1-.6.5-1.2.9-2 1.2-.7.3-1.6.4-2.5.4-2 0-3.6-.7-4.8-2-1.2-1.3-1.7-2.9-1.7-4.5s.5-3 1.5-4.3c1.2-1.6 2.9-2.4 5-2.4s3.8.8 5.1 2.4c.9 1.1 1.4 2.6 1.4 4.3H46.2zM40 16.8H5.1c-.6 0-1.2.6-1.2 1.2s.6 1.2 1.2 1.2h36.3c-.6-.7-1.1-1.5-1.4-2.4zM51 1.4c5.9 0 10.6 4.8 10.6 10.6S56.8 22.6 51 22.6 40.3 17.9 40.3 12 45.1 1.4 51 1.4zm-3.5 22.1zm3.8.5zm-.1 0zm-.4 0zm.4 0zm0 0zm-.4 0zm0 0zm.3 0zm-.2 0zm.2 0zm-.2 0zm.2 0zm-.2 0zm.1 0zm-.1 0zm.1 0zM9.6 45h3V20.6h-3V45zm25.3 0h3V20.6h-3V45zm-8.3 0h6.8V20.6h-6.8V45zm-4.3 0h3V20.6h-3V45zm20.3-24.4h-3.4V45H46V23c-1.2-.6-2.4-1.4-3.4-2.4zM14.1 45.1h6.8V20.6h-6.8v24.5zm33.4-21.6v21.6h3V24c-1 0-2-.2-3-.5zm6.4 22.9H6.2c-.7 0-1.2.6-1.2 1.2 0 .7.6 1.2 1.2 1.2h47.7c.6 0 1.2-.6 1.2-1.2s-.5-1.2-1.2-1.2zm3.6 3.8H2.6c-.6 0-1.2.6-1.2 1.2s.6 1.2 1.2 1.2h54.9c.6 0 1.2-.6 1.2-1.2s-.5-1.2-1.2-1.2zM40.1 6.8c2-4 6.1-6.8 10.9-6.8 6.6 0 12 5.4 12 12 0 6.3-4.9 11.6-11.2 12v21h2c1.5 0 2.6 1.2 2.6 2.6 0 .5-.1.8-.3 1.2h1.4c1.5 0 2.6 1.2 2.6 2.7s-1.2 2.6-2.6 2.6H2.6C1.1 54.1 0 53 0 51.5s1.2-2.6 2.6-2.6h1.3c-.2-.4-.3-.7-.3-1.2 0-1.5 1.2-2.6 2.6-2.6h2V20.7H5.1c-1.5 0-2.6-1.1-2.6-2.6s1.2-2.6 2.6-2.6H7L30.1 0l10 6.8z"></path></svg></span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 63 54.1"
+            >
+              <style>
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                }
+              </style>
+              <path
+                class="st0"
+                fill="currentColor"
+                d="M55.7 10.7c-.2-.9-.5-1.5-.9-2.1-.4-.5-1-.9-1.6-1.2-.8-.3-1.5-.4-2.2-.4-1.2 0-2.3.4-3.2 1.2-.6.6-1.1 1.4-1.5 2.6h9.4zm-33 3H24v-3.4h-1.4v3.4zm4.5 0h1.4v-3.4h-1.4v3.4zm4.4 0H33v-3.4h-1.4v3.4zm8-5.6l-9.5-6.4L9.5 15.5h30c-.4-1.1-.5-2.3-.5-3.5 0-1.4.2-2.7.6-3.9zm6.6 4c0 1.5.5 2.7 1.4 3.6.9.9 2 1.4 3.3 1.4.6 0 1.3-.1 1.9-.3.6-.2 1.1-.5 1.5-.9.4-.4.9-1 1.4-1.8l1.4.7c-.4.9-1 1.6-1.5 2.1-.6.5-1.2.9-2 1.2-.7.3-1.6.4-2.5.4-2 0-3.6-.7-4.8-2-1.2-1.3-1.7-2.9-1.7-4.5s.5-3 1.5-4.3c1.2-1.6 2.9-2.4 5-2.4s3.8.8 5.1 2.4c.9 1.1 1.4 2.6 1.4 4.3H46.2zM40 16.8H5.1c-.6 0-1.2.6-1.2 1.2s.6 1.2 1.2 1.2h36.3c-.6-.7-1.1-1.5-1.4-2.4zM51 1.4c5.9 0 10.6 4.8 10.6 10.6S56.8 22.6 51 22.6 40.3 17.9 40.3 12 45.1 1.4 51 1.4zm-3.5 22.1zm3.8.5zm-.1 0zm-.4 0zm.4 0zm0 0zm-.4 0zm0 0zm.3 0zm-.2 0zm.2 0zm-.2 0zm.2 0zm-.2 0zm.1 0zm-.1 0zm.1 0zM9.6 45h3V20.6h-3V45zm25.3 0h3V20.6h-3V45zm-8.3 0h6.8V20.6h-6.8V45zm-4.3 0h3V20.6h-3V45zm20.3-24.4h-3.4V45H46V23c-1.2-.6-2.4-1.4-3.4-2.4zM14.1 45.1h6.8V20.6h-6.8v24.5zm33.4-21.6v21.6h3V24c-1 0-2-.2-3-.5zm6.4 22.9H6.2c-.7 0-1.2.6-1.2 1.2 0 .7.6 1.2 1.2 1.2h47.7c.6 0 1.2-.6 1.2-1.2s-.5-1.2-1.2-1.2zm3.6 3.8H2.6c-.6 0-1.2.6-1.2 1.2s.6 1.2 1.2 1.2h54.9c.6 0 1.2-.6 1.2-1.2s-.5-1.2-1.2-1.2zM40.1 6.8c2-4 6.1-6.8 10.9-6.8 6.6 0 12 5.4 12 12 0 6.3-4.9 11.6-11.2 12v21h2c1.5 0 2.6 1.2 2.6 2.6 0 .5-.1.8-.3 1.2h1.4c1.5 0 2.6 1.2 2.6 2.7s-1.2 2.6-2.6 2.6H2.6C1.1 54.1 0 53 0 51.5s1.2-2.6 2.6-2.6h1.3c-.2-.4-.3-.7-.3-1.2 0-1.5 1.2-2.6 2.6-2.6h2V20.7H5.1c-1.5 0-2.6-1.1-2.6-2.6s1.2-2.6 2.6-2.6H7L30.1 0l10 6.8z"
+              ></path></svg
+          ></span>
           <p>Account Services</p>
         </li>
         <li>
-          <span><svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor"  d="M26.7 26.3h-14v-3.6h-1.5v25.6h1.5v-3.6h14c2.1 0 3.8-1.7 3.8-3.8V30.1c0-2.1-1.7-3.8-3.8-3.8zM29 40.9c0 1.2-1 2.3-2.3 2.3h-14V27.8h14c1.2 0 2.3 1 2.3 2.3v10.8z"></path><path fill="currentColor" d="M20.8 41.5H27v-5.4h-6.2v5.4zm1.5-3.9h3.2V40h-3.2v-2.4zM18 30.6h1.5v1.5H18zM25.4 30.6h1.5v1.5h-1.5zM14.3 30.6h1.5v1.5h-1.5zM21.7 30.6h1.5v1.5h-1.5zM14.1 39.6h5.3v1.5h-5.3zM16.6 36.8h2.8v1.5h-2.8z"></path><path fill="currentColor"d="M61.7 52.7V16.8h-5.4v-1.7c0-1-.8-1.8-1.8-1.8H53v-3.1C53 7.9 51.1 6 48.8 6c-2.4 0-4.3 1.9-4.3 4.3v3.1H43c-1 0-1.8.8-1.8 1.8v1.7H3.3v35.9H-.2v2.5L2.5 59h60l2.8-3.9v-2.5h-3.6zM46 10.3c0-1.5 1.3-2.8 2.8-2.8 1.5 0 2.8 1.3 2.8 2.8v3.1H46v-3.1zm-3.3 4.8c0-.1.1-.3.3-.3h11.6c.1 0 .3.1.3.3v7.8c0 .1-.1.3-.3.3H42.9c-.1 0-.3-.1-.3-.3v-7.8zM4.8 18.3h36.4v4.6c0 1 .8 1.8 1.8 1.8h11.6c1 0 1.8-.8 1.8-1.8v-4.6h3.9v34.4H4.8V18.3zm59 36.4l-2 2.8H3.3l-2-2.8v-.5h62.4v.5z"></path><path fill="currentColor" d="M53.6 40.1c0-.3-.2-.6-.5-.7l-8.2-2.6c-.3-.1-.6 0-.8.2-.2.2-.3.5-.2.8l2.6 8.2c.1.3.4.5.7.5.3 0 .6-.2.7-.5l1.1-3 3.2 3.3c.1.1.3.2.5.2s.4-.1.5-.2c.3-.3.3-.8 0-1.1l-3.3-3.3 3-1.1c.5-.1.7-.4.7-.7zm-5.1.8c-.1 0-.2.1-.3.2-.1.1-.1.2-.2.3l-.7 2-1.5-4.7 4.7 1.5-2 .7z"></path></svg></span>
+          <span
+            ><svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill="currentColor"
+                d="M26.7 26.3h-14v-3.6h-1.5v25.6h1.5v-3.6h14c2.1 0 3.8-1.7 3.8-3.8V30.1c0-2.1-1.7-3.8-3.8-3.8zM29 40.9c0 1.2-1 2.3-2.3 2.3h-14V27.8h14c1.2 0 2.3 1 2.3 2.3v10.8z"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M20.8 41.5H27v-5.4h-6.2v5.4zm1.5-3.9h3.2V40h-3.2v-2.4zM18 30.6h1.5v1.5H18zM25.4 30.6h1.5v1.5h-1.5zM14.3 30.6h1.5v1.5h-1.5zM21.7 30.6h1.5v1.5h-1.5zM14.1 39.6h5.3v1.5h-5.3zM16.6 36.8h2.8v1.5h-2.8z"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M61.7 52.7V16.8h-5.4v-1.7c0-1-.8-1.8-1.8-1.8H53v-3.1C53 7.9 51.1 6 48.8 6c-2.4 0-4.3 1.9-4.3 4.3v3.1H43c-1 0-1.8.8-1.8 1.8v1.7H3.3v35.9H-.2v2.5L2.5 59h60l2.8-3.9v-2.5h-3.6zM46 10.3c0-1.5 1.3-2.8 2.8-2.8 1.5 0 2.8 1.3 2.8 2.8v3.1H46v-3.1zm-3.3 4.8c0-.1.1-.3.3-.3h11.6c.1 0 .3.1.3.3v7.8c0 .1-.1.3-.3.3H42.9c-.1 0-.3-.1-.3-.3v-7.8zM4.8 18.3h36.4v4.6c0 1 .8 1.8 1.8 1.8h11.6c1 0 1.8-.8 1.8-1.8v-4.6h3.9v34.4H4.8V18.3zm59 36.4l-2 2.8H3.3l-2-2.8v-.5h62.4v.5z"
+              ></path>
+              <path
+                fill="currentColor"
+                d="M53.6 40.1c0-.3-.2-.6-.5-.7l-8.2-2.6c-.3-.1-.6 0-.8.2-.2.2-.3.5-.2.8l2.6 8.2c.1.3.4.5.7.5.3 0 .6-.2.7-.5l1.1-3 3.2 3.3c.1.1.3.2.5.2s.4-.1.5-.2c.3-.3.3-.8 0-1.1l-3.3-3.3 3-1.1c.5-.1.7-.4.7-.7zm-5.1.8c-.1 0-.2.1-.3.2-.1.1-.1.2-.2.3l-.7 2-1.5-4.7 4.7 1.5-2 .7z"
+              ></path></svg
+          ></span>
           <p>E-Channels &amp; 737</p>
         </li>
         <li>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="47" height="30.4" viewBox="0 0 47 30.4"><style>.st0{fill-rule:evenodd;clip-rule:evenodd}</style><path fill="currentColor"class="st0" d="M32.3 12.1h10.3V11H32.3v1.1zM18.9 7.9v.4c.8.2 1.1.7 1.2 1.2h-1c-.1-.2-.1-.5-.7-.5-.4 0-.6.3-.6.5 0 .3.2.4.9.6 1 .3 1.4.7 1.4 1.4 0 .8-.5 1.2-1.2 1.3v.5h-.8v-.5c-.8-.1-1.2-.6-1.3-1.3h1c.1.4.3.6.8.6s.7-.2.7-.5-.2-.5-.8-.7c-1.1-.3-1.5-.8-1.5-1.4 0-.7.5-1.1 1.2-1.2v-.4h.7zm8.4 7.9h15.4v-1.1H27.3v1.1zM15.8 15c-.3 1.5-1.4 2.5-3.4 2.5-2.5 0-3.7-1.8-3.7-4.1 0-2.2 1.2-4.2 3.8-4.2 2.1 0 3.1 1.2 3.3 2.6h-1.5c-.2-.7-.7-1.3-1.9-1.3-1.6 0-2.2 1.4-2.2 2.9 0 1.4.6 3 2.2 3 1.2 0 1.6-.8 1.8-1.3h1.6zm30 6.8V7.4c0-.9-.7-1.6-1.6-1.6H7.3c-.9 0-1.6.7-1.6 1.6v14.4h40.1zm-4.6-17V3c0-1-.8-1.8-1.8-1.8H2.9c-1 0-1.8.8-1.8 1.8v20c0 1 .8 1.8 1.8 1.8h1.8V7.4c0-1.5 1.2-2.7 2.7-2.7h33.8zM28.3 26.6h1.1v-1.1h-1.1v1.1zm-2.8 0h1.1v-1.1h-1.1v1.1zm5.7 0h1.1v-1.1h-1.1v1.1zm8.6 0h1.1v-1.1h-1.1v1.1zm-17.2 0h1.1v-1.1h-1.1v1.1zm14.3 0H38v-1.1h-1.1v1.1zm-2.8 0h1.1v-1.1h-1.1v1.1zm8.6 0h1.1v-1.1h-1.1v1.1zm-34.5 0h1.1v-1.1H8.2v1.1zm11.5 0h1.1v-1.1h-1.1v1.1zm-8.6 0h1.1v-1.1h-1.1v1.1zm2.9 0h1v-1.1h-1v1.1zm2.8 0h1.1v-1.1h-1.1v1.1zM46 27.8v-4.9H5.8v4.9c0 .9.7 1.6 1.6 1.6h37c.8 0 1.5-.8 1.6-1.6zM39.5 0c1.6 0 2.9 1.3 2.9 2.9v1.8h2c1.4 0 2.7 1.2 2.7 2.7v20.2c0 1.4-1.2 2.7-2.7 2.7h-37c-1.4 0-2.7-1.2-2.7-2.7v-2H2.9c-1.6 0-2.9-1.3-2.9-2.9v-20C0 1.3 1.3 0 2.9 0h36.6z"></path></svg></span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="47"
+              height="30.4"
+              viewBox="0 0 47 30.4"
+            >
+              <style>
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                }
+              </style>
+              <path
+                fill="currentColor"
+                class="st0"
+                d="M32.3 12.1h10.3V11H32.3v1.1zM18.9 7.9v.4c.8.2 1.1.7 1.2 1.2h-1c-.1-.2-.1-.5-.7-.5-.4 0-.6.3-.6.5 0 .3.2.4.9.6 1 .3 1.4.7 1.4 1.4 0 .8-.5 1.2-1.2 1.3v.5h-.8v-.5c-.8-.1-1.2-.6-1.3-1.3h1c.1.4.3.6.8.6s.7-.2.7-.5-.2-.5-.8-.7c-1.1-.3-1.5-.8-1.5-1.4 0-.7.5-1.1 1.2-1.2v-.4h.7zm8.4 7.9h15.4v-1.1H27.3v1.1zM15.8 15c-.3 1.5-1.4 2.5-3.4 2.5-2.5 0-3.7-1.8-3.7-4.1 0-2.2 1.2-4.2 3.8-4.2 2.1 0 3.1 1.2 3.3 2.6h-1.5c-.2-.7-.7-1.3-1.9-1.3-1.6 0-2.2 1.4-2.2 2.9 0 1.4.6 3 2.2 3 1.2 0 1.6-.8 1.8-1.3h1.6zm30 6.8V7.4c0-.9-.7-1.6-1.6-1.6H7.3c-.9 0-1.6.7-1.6 1.6v14.4h40.1zm-4.6-17V3c0-1-.8-1.8-1.8-1.8H2.9c-1 0-1.8.8-1.8 1.8v20c0 1 .8 1.8 1.8 1.8h1.8V7.4c0-1.5 1.2-2.7 2.7-2.7h33.8zM28.3 26.6h1.1v-1.1h-1.1v1.1zm-2.8 0h1.1v-1.1h-1.1v1.1zm5.7 0h1.1v-1.1h-1.1v1.1zm8.6 0h1.1v-1.1h-1.1v1.1zm-17.2 0h1.1v-1.1h-1.1v1.1zm14.3 0H38v-1.1h-1.1v1.1zm-2.8 0h1.1v-1.1h-1.1v1.1zm8.6 0h1.1v-1.1h-1.1v1.1zm-34.5 0h1.1v-1.1H8.2v1.1zm11.5 0h1.1v-1.1h-1.1v1.1zm-8.6 0h1.1v-1.1h-1.1v1.1zm2.9 0h1v-1.1h-1v1.1zm2.8 0h1.1v-1.1h-1.1v1.1zM46 27.8v-4.9H5.8v4.9c0 .9.7 1.6 1.6 1.6h37c.8 0 1.5-.8 1.6-1.6zM39.5 0c1.6 0 2.9 1.3 2.9 2.9v1.8h2c1.4 0 2.7 1.2 2.7 2.7v20.2c0 1.4-1.2 2.7-2.7 2.7h-37c-1.4 0-2.7-1.2-2.7-2.7v-2H2.9c-1.6 0-2.9-1.3-2.9-2.9v-20C0 1.3 1.3 0 2.9 0h36.6z"
+              ></path></svg
+          ></span>
           <p>Card Services</p>
         </li>
         <li>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="63" height="55.8" viewBox="0 0 63 55.8"><style>.st0{fill-rule:evenodd;clip-rule:evenodd}</style><path fill="currentColor"d="M45.9 20.9l-4.7-2.8 6.3-6.7c.2-.3.3-.7.1-1-.2-.3-.6-.4-.9-.2l-9.9 5.1-3.8-2.2L60 2.3 45.9 20.9zm7.2 6.9H41.5c0-2.8-.3-5.6-.8-8.2l5 3c.3.2.7.1 1-.2l3.9-5.1c1.5 3.2 2.4 6.8 2.5 10.5zm-7.9 19.3c-1.8-1.5-3.8-2.9-5.9-4 1.4-4.1 2.1-8.8 2.2-14h11.6c-.2 6.8-3 13.3-7.9 18zm-12.5 6.7c2.5-1.9 4.6-5.2 6.2-9.3 1.9 1 3.7 2.1 5.3 3.6-3.3 2.9-7.3 4.8-11.5 5.7zM28 41.9c3.3.1 6.6.8 9.6 2.1-2.2 6-5.6 10-9.6 10.4V41.9zm0-12.6h12.1c-.1 4.9-.8 9.5-2 13.3-3.1-1.4-6.6-2.1-10.1-2.2V29.3zm9.6-8.8v-3.8l6.1-3.2-4 4.3-2.1 2.7zM28 16.7c2.1-.1 4.4-.4 6.4-.9l1.7 1.1v5.8c0 .3.2.6.5.7h.2c.2 0 .4-.1.6-.3l2-2.6c.4 2.3.6 4.8.7 7.4H28V16.7zm0-14c3.1.4 6.1 3.1 8.3 7.6l-5.2 2.1c-.3.1-.4.3-.5.6 0 .3.1.6.4.7l1.6 1c-1.6.3-3.1.5-4.7.5V2.7zm14.7 5.1l-5 2c-1.4-2.8-3.1-5-4.9-6.5 3.5.7 6.9 2.2 9.9 4.5zm-16.2 7.4c-3.3-.1-6.6-.8-9.6-2.1 2.2-6 5.6-10 9.6-10.4v12.5zm0 12.6h-12c.1-4.9.8-9.5 2-13.3 3.1 1.4 6.6 2.1 10.1 2.2l-.1 11.1zm0 12.6c-3.5.1-6.9.9-10.1 2.2-1.3-3.9-1.9-8.4-2-13.3h12.1v11.1zm0 14c-3.9-.5-7.4-4.5-9.6-10.4 3-1.3 6.2-2 9.6-2.1v12.5zm-16.1-6.3c1.6-1.5 3.5-2.6 5.3-3.6 1.6 4.1 3.7 7.4 6.2 9.3-4.2-.9-8.1-2.8-11.5-5.7zm-.6-.5c-.2-.1-.3-.3-.5-.4l.6.6c0-.1 0-.2-.1-.2zM1.5 29.3h11.6c.1 5.1.9 9.9 2.2 14-2.1 1.1-4.2 2.3-5.9 4-4.9-4.9-7.8-11.4-7.9-18zM9.3 9.9c1.8 1.5 3.8 2.9 5.9 4-1.4 4.1-2.1 8.8-2.2 13.9H1.4C1.6 21 4.5 14.6 9.3 9.9zm.5-.4l.3-.3-.5.5.2-.2zm12.1-6.3c-2.5 1.9-4.6 5.2-6.2 9.3-1.9-1-3.7-2.1-5.3-3.6 3.4-2.8 7.3-4.8 11.5-5.7zM62.8.3c-.2-.3-.6-.4-.9-.2L44.2 7.2c-4.8-3.9-10.7-5.9-16.9-5.9h-.1c-6.9 0-13.4 2.5-18.4 7.2C3.2 13.6 0 20.9 0 28.5c0 7.7 3.2 14.9 8.8 20.2 5 4.6 11.6 7.2 18.5 7.2s13.5-2.5 18.5-7.2c5.6-5.1 8.8-12.5 8.8-20.1 0-4.4-1.1-8.7-3-12.5L62.8 1.2c.3-.3.3-.6 0-.9z"></path></svg></span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="63"
+              height="55.8"
+              viewBox="0 0 63 55.8"
+            >
+              <style>
+                .st0 {
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                }
+              </style>
+              <path
+                fill="currentColor"
+                d="M45.9 20.9l-4.7-2.8 6.3-6.7c.2-.3.3-.7.1-1-.2-.3-.6-.4-.9-.2l-9.9 5.1-3.8-2.2L60 2.3 45.9 20.9zm7.2 6.9H41.5c0-2.8-.3-5.6-.8-8.2l5 3c.3.2.7.1 1-.2l3.9-5.1c1.5 3.2 2.4 6.8 2.5 10.5zm-7.9 19.3c-1.8-1.5-3.8-2.9-5.9-4 1.4-4.1 2.1-8.8 2.2-14h11.6c-.2 6.8-3 13.3-7.9 18zm-12.5 6.7c2.5-1.9 4.6-5.2 6.2-9.3 1.9 1 3.7 2.1 5.3 3.6-3.3 2.9-7.3 4.8-11.5 5.7zM28 41.9c3.3.1 6.6.8 9.6 2.1-2.2 6-5.6 10-9.6 10.4V41.9zm0-12.6h12.1c-.1 4.9-.8 9.5-2 13.3-3.1-1.4-6.6-2.1-10.1-2.2V29.3zm9.6-8.8v-3.8l6.1-3.2-4 4.3-2.1 2.7zM28 16.7c2.1-.1 4.4-.4 6.4-.9l1.7 1.1v5.8c0 .3.2.6.5.7h.2c.2 0 .4-.1.6-.3l2-2.6c.4 2.3.6 4.8.7 7.4H28V16.7zm0-14c3.1.4 6.1 3.1 8.3 7.6l-5.2 2.1c-.3.1-.4.3-.5.6 0 .3.1.6.4.7l1.6 1c-1.6.3-3.1.5-4.7.5V2.7zm14.7 5.1l-5 2c-1.4-2.8-3.1-5-4.9-6.5 3.5.7 6.9 2.2 9.9 4.5zm-16.2 7.4c-3.3-.1-6.6-.8-9.6-2.1 2.2-6 5.6-10 9.6-10.4v12.5zm0 12.6h-12c.1-4.9.8-9.5 2-13.3 3.1 1.4 6.6 2.1 10.1 2.2l-.1 11.1zm0 12.6c-3.5.1-6.9.9-10.1 2.2-1.3-3.9-1.9-8.4-2-13.3h12.1v11.1zm0 14c-3.9-.5-7.4-4.5-9.6-10.4 3-1.3 6.2-2 9.6-2.1v12.5zm-16.1-6.3c1.6-1.5 3.5-2.6 5.3-3.6 1.6 4.1 3.7 7.4 6.2 9.3-4.2-.9-8.1-2.8-11.5-5.7zm-.6-.5c-.2-.1-.3-.3-.5-.4l.6.6c0-.1 0-.2-.1-.2zM1.5 29.3h11.6c.1 5.1.9 9.9 2.2 14-2.1 1.1-4.2 2.3-5.9 4-4.9-4.9-7.8-11.4-7.9-18zM9.3 9.9c1.8 1.5 3.8 2.9 5.9 4-1.4 4.1-2.1 8.8-2.2 13.9H1.4C1.6 21 4.5 14.6 9.3 9.9zm.5-.4l.3-.3-.5.5.2-.2zm12.1-6.3c-2.5 1.9-4.6 5.2-6.2 9.3-1.9-1-3.7-2.1-5.3-3.6 3.4-2.8 7.3-4.8 11.5-5.7zM62.8.3c-.2-.3-.6-.4-.9-.2L44.2 7.2c-4.8-3.9-10.7-5.9-16.9-5.9h-.1c-6.9 0-13.4 2.5-18.4 7.2C3.2 13.6 0 20.9 0 28.5c0 7.7 3.2 14.9 8.8 20.2 5 4.6 11.6 7.2 18.5 7.2s13.5-2.5 18.5-7.2c5.6-5.1 8.8-12.5 8.8-20.1 0-4.4-1.1-8.7-3-12.5L62.8 1.2c.3-.3.3-.6 0-.9z"
+              ></path></svg
+          ></span>
           <p>Non-resident Nigerian</p>
         </li>
         <li>
-          <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="63" viewBox="0 0 50 63"><title>Untitled-1</title><g fill="#221f20"><path fill="currentColor"d="M5.5 23h25.3v1.4H5.5zm29 23h10.7v-1.5H34.4zm-29-6.8h25.3v1.4H5.5zm0 5.3h25.3V46H5.5zm0-10.7h25.3v1.5H5.5zm29 6.8h10.7v-1.4H34.4zm-29-12.2h25.3v1.5H5.5zm29 6.8h10.7v-1.4H34.4z"></path><path fill="currentColor"d="M0 0v49.7c0 4.4 3.5 8 7.9 8L50 63V0H0zm11.7 56.8c2.3-1.2 3.8-3.5 4.1-6l27.2 10-31.3-4zm36.9 4.4l-34-12.5v1.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5V1.4h47.1v59.8z"></path><path fill="currentColor"d="M31.5 4H4.7v15h26.7V4zM30 17.6H6.2V5.5H30v12.1zM46 4H33.8v15H46V4zm-1.5 13.6h-9.3V5.5h9.3v12.1zm-10 12.2h10.7v-1.4H34.4zm0-5.4h10.7V23H34.4z"></path></g></svg></span>
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="63"
+              viewBox="0 0 50 63"
+            >
+              <title>Untitled-1</title>
+              <g fill="#221f20">
+                <path
+                  fill="currentColor"
+                  d="M5.5 23h25.3v1.4H5.5zm29 23h10.7v-1.5H34.4zm-29-6.8h25.3v1.4H5.5zm0 5.3h25.3V46H5.5zm0-10.7h25.3v1.5H5.5zm29 6.8h10.7v-1.4H34.4zm-29-12.2h25.3v1.5H5.5zm29 6.8h10.7v-1.4H34.4z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M0 0v49.7c0 4.4 3.5 8 7.9 8L50 63V0H0zm11.7 56.8c2.3-1.2 3.8-3.5 4.1-6l27.2 10-31.3-4zm36.9 4.4l-34-12.5v1.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5V1.4h47.1v59.8z"
+                ></path>
+                <path
+                  fill="currentColor"
+                  d="M31.5 4H4.7v15h26.7V4zM30 17.6H6.2V5.5H30v12.1zM46 4H33.8v15H46V4zm-1.5 13.6h-9.3V5.5h9.3v12.1zm-10 12.2h10.7v-1.4H34.4zm0-5.4h10.7V23H34.4z"
+                ></path>
+              </g></svg
+          ></span>
           <p>Forms</p>
         </li>
       </ul>
@@ -210,15 +396,14 @@
     <section class="section-faq" id="faq-accounts">
       <div class="faq-heading">
         <h3>Account Services</h3>
-        <p>Find information about our account services topics here
-        </p>
+        <p>Find information about our account services topics here</p>
         <div>
           <span>FAQs</span>
           <span>Self Service Portal</span>
         </div>
       </div>
       <div class="faq-accordion-container">
-        <ul class="faq-accordion">
+        <ul class="faq-accordion md-justify-center md-align-center">
           <li class="accordion-item">
             <h2>
               1. How to Open An Account
@@ -228,35 +413,58 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-1"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-1"
+              />
             </h2>
             <div class="accordion-content">
               <h3>Internet Banking</h3>
               <p>Additional Account</p>
               <ul>
-                <li>Log on to Internet Banking with your User ID/Email and password.</li>
+                <li>
+                  Log on to Internet Banking with your User ID/Email and
+                  password.
+                </li>
                 <li>Click My Account >> Additional Account</li>
-                <li>Select Account type to open (i.e. Current or Savings Account)</li>
+                <li>
+                  Select Account type to open (i.e. Current or Savings Account)
+                </li>
                 <li>Provide the answer to your secret question</li>
-                <li>Click the “I Accept the Terms and conditions” checkbox and click “Submit”</li>
-                <li>Enter your Token code and click “Submit” to complete the request</li>
+                <li>
+                  Click the “I Accept the Terms and conditions” checkbox and
+                  click “Submit”
+                </li>
+                <li>
+                  Enter your Token code and click “Submit” to complete the
+                  request
+                </li>
               </ul>
               <h3>GTBank Website</h3>
               <ul>
                 <li>Access GTBank website: <a href="">www.gtbank.com</a></li>
                 <li>Click “Personal Banking” or “Business Banking”</li>
                 <li>Select “Account” and Click account type to open</li>
-                <li>Complete the displayed form with requested details (e.g. Names, Account type, Address(es), email, etc.)</li>
-                <li>Click the “I Accept the Terms and conditions” checkbox then click “Submit”</li>
+                <li>
+                  Complete the displayed form with requested details (e.g.
+                  Names, Account type, Address(es), email, etc.)
+                </li>
+                <li>
+                  Click the “I Accept the Terms and conditions” checkbox then
+                  click “Submit”
+                </li>
               </ul>
-              <br>
+              <br />
               <h3>USSD</h3>
               <ul>
                 <li>Dial *737*0# and follow the prompt</li>
                 <li>Select an option to open an account</li>
-                <li>Enter required details and click ‘Continue’ to complete.</li>
+                <li>
+                  Enter required details and click ‘Continue’ to complete.
+                </li>
               </ul>
-              
+
               <h3>ATM</h3>
               <ul>
                 <li>Locate any GTBank ATM</li>
@@ -278,7 +486,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-2"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-2"
+              />
             </h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -296,7 +508,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-3"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-3"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
@@ -314,7 +530,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-4"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-4"
+              />
             </h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
@@ -332,7 +552,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-5"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-5"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
@@ -350,7 +574,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-6"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-6"
+              />
             </h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
@@ -368,7 +596,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-7"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-7"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et magni
@@ -386,7 +618,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-8"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-8"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -404,7 +640,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-9"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-9"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
@@ -422,7 +662,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-10"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-10"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
@@ -440,7 +684,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-11"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-11"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
@@ -458,7 +706,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-12"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-12"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
@@ -476,7 +728,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-13"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-13"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -494,7 +750,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-13"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-13"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -512,7 +772,11 @@
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-13"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-13"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -523,14 +787,19 @@
           </li>
           <li class="accordion-item">
             <h2>
-              16. How to Resolve Errors Encountered While Opening An Account on The Website
+              16. How to Resolve Errors Encountered While Opening An Account on
+              The Website
               <label for="checkbox-13" class="checkbox-label">
                 <span class="label-inner">
                   <span></span>
                   <span></span>
                 </span>
               </label>
-              <input type="checkbox" name="faq-accordion-input" id="checkbox-13"></input>
+              <input
+                type="checkbox"
+                name="faq-accordion-input"
+                id="checkbox-13"
+              />
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -546,7 +815,9 @@
     <div class="satisfaction-feedback-link-area">
       <div>
         <h3>Still not satisfied with the FAQs?</h3>
-        <p>You can send us a message using the complaints and enquiries form.</p>
+        <p>
+          You can send us a message using the complaints and enquiries form.
+        </p>
       </div>
 
       <div>
@@ -612,16 +883,12 @@
                   height="33.5"
                   viewBox="0 0 47 33.5"
                 >
-                  <style>
-                    .st0 {
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                    }
-                  </style>
                   <path
                     class="st0"
                     stroke="none"
                     fill="currentColor"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M41.2 5.4c.6 0 1.1-.5 1.1-1.1v-.2c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zM31 11.9c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zm-14.9 1.6c-3.5 0-6.2-2.8-6.2-6.2s2.8-6.2 6.2-6.2c3.5 0 6.2 2.8 6.2 6.2s-2.8 6.2-6.2 6.2zm14.8-5c1 0 1.9.7 2.1 1.7h13.9v1.1H33c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-6.4c-1.3 2-3.5 3.4-6.2 3.4-4.1 0-7.3-3.3-7.3-7.3S12 0 16.1 0c2.7 0 5 1.4 6.3 3.6h16.5C39.1 2.7 40 2 41 2h.1c1 0 1.9.7 2.2 1.7H47v1.1h-3.7c-.2.9-1.1 1.7-2.1 1.7h-.1c-1.1 0-1.9-.7-2.2-1.7h-16c.4.8.5 1.7.5 2.6 0 1-.2 2-.6 2.8h5.9c.2-.9 1.1-1.7 2.1-1.7h.1zm8 9.9c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zm-3.1 6.5c.6 0 1.1-.5 1.1-1.1v-.1c0-.6-.5-1.1-1.1-1.1h-.1c-.6 0-1.1.5-1.1 1.1v.1c0 .6.5 1.1 1.1 1.1h.1zM31 32.4c-.2-4.5-.7-9-.7-9.1 0-1-.3-2.1-.9-3.2-.6-1-1.6-1.8-2.8-2.2l-4.3-1.5-4.6 8.6h-3.3l-4.6-8.6L5.6 18c-1.2.4-2.2 1.2-2.8 2.2-.4.8-.9 2-.9 3.2 0 .1-.5 4.6-.7 9.1h4.6l.4-5.6 1 .1-.4 5.5h18.4l-.3-5.5 1.1-.1.4 5.5H31zM38.9 15c1 0 1.9.7 2 1.6h5.9v1.1h-5.9c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-8.1c.7.5 1.3 1.2 1.7 2 .7 1.2 1.1 2.4 1.1 3.5h2.2c.2-.9 1.1-1.7 2.1-1.7h.1c1.1 0 1.9.7 2.1 1.6h9v1.1h-9c-.2.9-1.1 1.7-2.1 1.7h-.1c-1 0-1.9-.7-2.1-1.7h-2.1c.1 1.7.5 5.2.7 8.8v.6H0V33c.1-4.8.7-9.6.7-9.7 0-1.2.4-2.4 1.1-3.6.7-1.2 1.9-2.2 3.3-2.8l5.1-1.8L15 24h2l4.8-8.9 4.4 1.6h10.4c.2-.9 1.1-1.7 2.1-1.7h.2z"
                   ></path>
                 </svg>
@@ -728,8 +995,8 @@
         </div>
       </div>
 
-      <!-- Main Footer -->
-      <div class="footer-main">
+      <!-- Main Footer (Large Screen) -->
+      <div class="footer-main screen-lg">
         <div class="grid wrapper-grid">
           <div class="">
             <h6>Personal</h6>
@@ -823,6 +1090,131 @@
         </div>
       </div>
 
+      <!-- Main Footer (Medium Screen - Accordion) -->
+      <div class="footer-main screen-md">
+        <div class="accordion">
+          <div class="accordion-item">
+            <input type="checkbox" id="accordion-personal" class="accordion-toggle"/>
+            <label for="accordion-personal" class="accordion-header">
+              <span>Personal</span>
+              <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Savings Account</a></li>
+                <li><a href="#">Current Account</a></li>
+                <li><a href="#">Compare Accounts</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Non Resident Nigerian (NRN) service</a></li>
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Ways to Bank</a></li>
+                <li><a href="#">Private Banking</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input type="checkbox" id="accordion-business" class="accordion-toggle">
+            <label for="accordion-business" class="accordion-header">
+              <span>Business</span>
+              <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Business Banking</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">e-Banking Services</a></li>
+                <li><a href="#">Commercial Banking</a></li>
+                <li><a href="#">Corporate Banking</a></li>
+                <li><a href="#">Loans & Advances</a></li>
+                <li><a href="#">SME Banking</a></li>
+                <li><a href="#">HabariPay</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input type="checkbox" id="accordion-about" class="accordion-toggle">
+            <label for="accordion-about" class="accordion-header">
+              <span>About Us</span>
+              <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Corporate Social Responsibility</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Squad by Habari</a></li>
+                <li><a href="#">Guarantee Trust Fund Managers</a></li>
+                <li><a href="#">Guarantee Trust Pension Managers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input type="checkbox" id="accordion-help" class="accordion-toggle">
+            <label for="accordion-help" class="accordion-header">
+              <span>Help & Security</span>
+              <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Account Reactivation</a></li>
+                <li><a href="#">Complaints & Enquiries</a></li>
+                <li><a href="#">Customer Feedback Survey</a></li>
+                <li><a href="#">Dispense Error</a></li>
+                <li><a href="#">Help Videos</a></li>
+                <li><a href="#">Self Service</a></li>
+                <li><a href="#">Security Center</a></li>
+                <li><a href="#">Whistle Blower</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input type="checkbox" id="accordion-links" class="accordion-toggle">
+            <label for="accordion-links" class="accordion-header">
+              <span>Quick Links</span>
+              <span class="accordion-icon"><i class="fa-solid fa-chevron-down"></i></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Find a Branck/ATM</a></li>
+                <li><a href="#">All Branches</a></li>
+                <li><a href="#">All your banking forums in one place</a></li>
+                <li><a href="#">BVN Linking Portal</a></li>
+                <li><a href="#">Financial Calculators</a></li>
+                <li><a href="#">iRefer</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Internal Links</a></li>
+                <li><a href="#">Video Authentication</a></li>
+                <li><a href="#">Open an Account</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-connect">
+          <div><img src="./images/footer/gt-connect.png" alt="" /></div>
+          <div class="grid">
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div>
+              <span
+                style="
+                  color: #2cb742;
+                  font-size: 1.2rem;
+                  margin-right: 0.5rem;
+                  transform: translateY(0.4rem);
+                "
+                ><i class="fa-brands fa-whatsapp"></i></span
+              ><a href="tel:+234">+234 123 xxx xxx</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Footer Bottom -->
       <div class="footer-bottom">
         <div class="wrapper">
@@ -889,5 +1281,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>

@@ -33,7 +33,7 @@
 
   <body>
     <!-- ============ ANNOUNCEMENT BANNER ============ -->
-    <div class="announcement-banner">
+    <div class="announcement-banner screen-lg">
       <div class="container">
         <div class="banner-title">Important Notice:</div>
         <p>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- ============ UTILITY HEADER ============ -->
-    <div class="utility-header">
+    <div class="utility-header screen-lg">
       <div class="_container">
         <ul class="utility-nav">
           <li>
@@ -54,7 +54,7 @@
               <span class="flag-icon">
                 <span class="flag-icon-inner"></span>
               </span>
-            <span><i class="fa-solid fa-chevron-down"></i></span>
+              <span><i class="fa-solid fa-chevron-down"></i></span>
             </a>
           </li>
           <li>
@@ -102,7 +102,7 @@
     </div>
 
     <!-- ============ MAIN NAVIGATION ============ -->
-    <nav class="main-nav">
+    <nav class="main-nav screen-lg">
       <div class="container">
         <ul class="main-nav-links">
           <li>
@@ -122,7 +122,7 @@
             </a>
           </li>
           <li><a href="personal-banking.html">Personal</a></li>
-          <li><a href="" class="active">Business</a></li>
+          <li><a href="business-banking.html" class="active">Business</a></li>
           <li><a href="about.html">About Us</a></li>
           <li>
             <a href="#" class="">Open an Account</a>
@@ -135,6 +135,97 @@
           <span class="logo-text"
             >Guaranty Trust Bank Ltd<br /><small>RC.152331</small></span
           >
+        </div>
+      </div>
+    </nav>
+
+    <nav class="smaller-screen-nav screen-md">
+      <div class="announcement-banner">
+        <div class="container">
+          <div class="banner-title">Important Notice:</div>
+          <p>
+            Please be mindful of fake sites run by fraudulent parties posing as
+            Guaranty Trust Bank Ltd or its affiliates. Do not disclose your
+            personal information and financial details to anyone online or
+            anywhere else.
+          </p>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="menu-controls">
+          <input type="checkbox" name="" id="mobile-menu-controls" />
+
+          <div class="hamburger">
+            <div class="open" role="button">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="close" role="button"><span></span><span></span></div>
+            <div class="menu-toggle">
+              <label for="mobile-menu-controls"> </label>
+            </div>
+          </div>
+          <a href="#" aria-label="Search" class="search-icon_">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 18 18"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.18 13.24c1.172-1.41 1.91-3.22 1.91-5.2C16.09 3.62 12.47 0 8.044 0S0 3.62 0 8.04c0 4.43 3.62 8.05 8.045 8.05a7.915 7.915 0 0 0 5.195-1.91l3.62 3.62c.134.13.302.2.47.2a.683.683 0 0 0 .47-.2.65.65 0 0 0 0-.94l-3.62-3.62zm-6.135 1.54c-3.687 0-6.704-3.01-6.704-6.7 0-3.69 3.017-6.71 6.704-6.71s6.704 3.02 6.704 6.71-3.017 6.7-6.704 6.7z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="online-banking-btn">
+            <span id="shopping-bag-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="78%"
+                height="100%"
+                viewBox="0 0 14 18"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.625 6H0v12h14V6H2.625zM1.5 7.5h11v9h-11v-9zM6.993 0c2.19-.004 4 1.805 4.007 4.04V6H3V4.053C2.998 1.818 4.803.008 6.993 0zm.003 1.5a2.538 2.538 0 0 0-2.541 2.553V6h5.09V4.043A2.538 2.538 0 0 0 6.996 1.5z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            Login
+          </a>
+
+          <div class="logo">
+            <img src="./icons/logo.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="">Home</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">Personal</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">Business</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">About Us</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+            <li>
+              <a href="">Open an Account</a
+              ><span><i class="fa-solid fa-chevron-right"></i></span>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -384,7 +475,7 @@
 
     <section class="bs-trio-divs">
       <h2>Solutions By Business Type</h2>
-      <div class="wrapper">
+      <div class="wrapper lg-justify-center">
         <div class="pns-item">
           <div class="pns-title">
             <span>
@@ -640,7 +731,7 @@
       </div>
 
       <!-- Main Footer -->
-      <div class="footer-main">
+      <div class="footer-main screen-lg">
         <div class="grid wrapper-grid">
           <div class="">
             <h6>Personal</h6>
@@ -708,6 +799,161 @@
               <li><a href="#">Video Authentication</a></li>
               <li><a href="#">Open an Account</a></li>
             </ul>
+          </div>
+        </div>
+        <div class="footer-connect">
+          <div><img src="./images/footer/gt-connect.png" alt="" /></div>
+          <div class="grid">
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div><a href="tel:+234">+234 123 xxxx xxxx</a></div>
+            <div>
+              <span
+                style="
+                  color: #2cb742;
+                  font-size: 1.2rem;
+                  margin-right: 0.5rem;
+                  transform: translateY(0.4rem);
+                "
+                ><i class="fa-brands fa-whatsapp"></i></span
+              ><a href="tel:+234">+234 123 xxx xxx</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Footer (Medium Screen - Accordion) -->
+      <div class="footer-main screen-md">
+        <div class="accordion">
+          <div class="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion-personal"
+              class="accordion-toggle"
+            />
+            <label for="accordion-personal" class="accordion-header">
+              <span>Personal</span>
+              <span class="accordion-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Savings Account</a></li>
+                <li><a href="#">Current Account</a></li>
+                <li><a href="#">Compare Accounts</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Non Resident Nigerian (NRN) service</a></li>
+                <li><a href="#">Loans</a></li>
+                <li><a href="#">Ways to Bank</a></li>
+                <li><a href="#">Private Banking</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion-business"
+              class="accordion-toggle"
+            />
+            <label for="accordion-business" class="accordion-header">
+              <span>Business</span>
+              <span class="accordion-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Business Banking</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">e-Banking Services</a></li>
+                <li><a href="#">Commercial Banking</a></li>
+                <li><a href="#">Corporate Banking</a></li>
+                <li><a href="#">Loans & Advances</a></li>
+                <li><a href="#">SME Banking</a></li>
+                <li><a href="#">HabariPay</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion-about"
+              class="accordion-toggle"
+            />
+            <label for="accordion-about" class="accordion-header">
+              <span>About Us</span>
+              <span class="accordion-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Our Company</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Corporate Social Responsibility</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Squad by Habari</a></li>
+                <li><a href="#">Guarantee Trust Fund Managers</a></li>
+                <li><a href="#">Guarantee Trust Pension Managers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion-help"
+              class="accordion-toggle"
+            />
+            <label for="accordion-help" class="accordion-header">
+              <span>Help & Security</span>
+              <span class="accordion-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Account Reactivation</a></li>
+                <li><a href="#">Complaints & Enquiries</a></li>
+                <li><a href="#">Customer Feedback Survey</a></li>
+                <li><a href="#">Dispense Error</a></li>
+                <li><a href="#">Help Videos</a></li>
+                <li><a href="#">Self Service</a></li>
+                <li><a href="#">Security Center</a></li>
+                <li><a href="#">Whistle Blower</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <input
+              type="checkbox"
+              id="accordion-links"
+              class="accordion-toggle"
+            />
+            <label for="accordion-links" class="accordion-header">
+              <span>Quick Links</span>
+              <span class="accordion-icon"
+                ><i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </label>
+            <div class="accordion-content">
+              <ul>
+                <li><a href="#">Find a Branck/ATM</a></li>
+                <li><a href="#">All Branches</a></li>
+                <li><a href="#">All your banking forums in one place</a></li>
+                <li><a href="#">BVN Linking Portal</a></li>
+                <li><a href="#">Financial Calculators</a></li>
+                <li><a href="#">iRefer</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Internal Links</a></li>
+                <li><a href="#">Video Authentication</a></li>
+                <li><a href="#">Open an Account</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="footer-connect">

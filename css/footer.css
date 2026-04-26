@@ -431,6 +431,130 @@
 }
 
 /* ============================================
+   ACCORDION (Medium Screen)
+   ============================================ */
+.footer-main.screen-md {
+  padding: 1.5rem 5%;
+  border: unset;
+}
+
+.footer-main.screen-md .accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-main.screen-md .accordion-item {
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: unset;
+  border-right: unset;
+  border-left: unset;
+  border-top: unset;
+}
+
+.footer-main.screen-md .accordion-toggle {
+  display: none;
+}
+
+.footer-main.screen-md .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-main.screen-md .accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.footer-main.screen-md .accordion-toggle:checked + .accordion-header .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.footer-main.screen-md .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.footer-main.screen-md .accordion-toggle:checked + .accordion-header + .accordion-content {
+  max-height: 500px;
+}
+
+.footer-main.screen-md .accordion-content ul {
+  padding-bottom: 1rem;
+  background-color: #74747418;
+  padding: 2rem;
+}
+
+.footer-main.screen-md .accordion-content ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-main.screen-md .accordion-content ul a {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.footer-main.screen-md .accordion-content ul a:hover {
+  color: var(--text-active);
+}
+
+.footer-main.screen-md .footer-connect {
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-main.screen-md .footer-connect::before {
+  top: -1rem;
+}
+
+.footer-main.screen-md .footer-connect > div:first-child {
+  width: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-main .footer-connect::before {
+    display: none;
+  }
+  .footer-main .footer-connect .grid {
+    width: 90vw !important;
+  }
+
+  .footer-main .footer-connect>div:is(:first-child) {
+    margin-right: auto;
+  }
+
+  .footer-bottom .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-bottom .wrapper > p {
+    margin-right: unset;
+    text-align: center;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+  .footer-bottom .footer-bottom-icons {
+    order: 0;
+  }
+  
+  .footer-bottom .footer-bottom-links {
+    width: 100%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 47.9375rem) {
