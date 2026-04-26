@@ -14,7 +14,8 @@
 
 .hero-section .carousel-item {
   height: 42rem;
-  /* margin: 0 !important; */
+  /* width: 20rem; */
+  background-color: red;
 }
 
 .hero-section .carousel-item img {
@@ -395,6 +396,21 @@
 .section-initiatives #initiativesCarousel .carousel-control-next-icon * {
 }
 
+.section-initiatives .carousel-inner {
+  display: flex;
+}
+
+.section-initiatives .carousel-item>.inner{
+  display: flex;
+}
+
+.section-initiatives .carousel-item.active {
+}
+
+
+.section-initiatives .carousel-item .child1, .section-initiatives .carousel-item .child2 {
+  width: 50%;
+}
 .initiative-card {
   display: block;
   margin-right: 1rem;
