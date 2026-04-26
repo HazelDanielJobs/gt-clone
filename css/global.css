@@ -57,3 +57,40 @@ body {
   --text-secondary: #696f73;
   --text-active: #dd5006;
 }
+
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+  .screen-lg {
+    display: none;
+  }
+  .screen-md {
+    display: none;
+  }
+  .screen-sm {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+  .screen-lg {
+    display: none;
+  }
+  .screen-md {
+    display: block;
+  }
+  .screen-sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .screen-lg {
+    display: block;
+  }
+  .screen-md {
+    display: none;
+  }
+  .screen-sm {
+    display: none;
+  }
+}

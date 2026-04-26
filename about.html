@@ -33,7 +33,7 @@
 
   <body>
     <!-- ============ ANNOUNCEMENT BANNER ============ -->
-    <div class="announcement-banner">
+    <div class="announcement-banner screen-lg">
       <div class="container">
         <div class="banner-title">Important Notice:</div>
         <p>
@@ -46,7 +46,7 @@
     </div>
 
     <!-- ============ UTILITY HEADER ============ -->
-    <div class="utility-header">
+    <div class="utility-header screen-lg">
       <div class="_container">
         <ul class="utility-nav">
           <li>
@@ -54,7 +54,7 @@
               <span class="flag-icon">
                 <span class="flag-icon-inner"></span>
               </span>
-              <span class="caret"></span>
+            <span><i class="fa-solid fa-chevron-down"></i></span>
             </a>
           </li>
           <li>
@@ -101,12 +101,13 @@
       </div>
     </div>
 
+
     <!-- ============ MAIN NAVIGATION ============ -->
-    <nav class="main-nav">
+    <nav class="main-nav screen-lg">
       <div class="container">
         <ul class="main-nav-links">
           <li>
-            <a href="index.html" class="home-icon_ active" aria-label="Home">
+            <a href="index.html" class="home-icon_" aria-label="Home">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -123,7 +124,7 @@
           </li>
           <li><a href="personal-banking.html">Personal</a></li>
           <li><a href="business-banking.html">Business</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
           <li>
             <a href="#" class="">Open an Account</a>
           </li>
@@ -137,6 +138,88 @@
           >
         </div>
       </div>
+    </nav>
+
+    <nav class="smaller-screen-nav screen-md">
+      <div class="announcement-banner">
+        <div class="container">
+          <div class="banner-title">Important Notice:</div>
+          <p>
+            Please be mindful of fake sites run by fraudulent parties posing as
+            Guaranty Trust Bank Ltd or its affiliates. Do not disclose your
+            personal information and financial details to anyone online or
+            anywhere else.
+          </p>
+        </div>
+      </div>
+
+      <div class="menu">
+        <div class="menu-controls">
+          <input type="checkbox" name="" id="mobile-menu-controls">
+          
+          <div class="hamburger">
+
+            <div class="open" role="button">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="close" role="button">
+              <span></span><span></span>
+            </div>
+            <div class="menu-toggle">
+              <label for="mobile-menu-controls">
+
+              </label>
+            </div>
+          </div>
+          <a href="#" aria-label="Search" class="search-icon_">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 18 18"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14.18 13.24c1.172-1.41 1.91-3.22 1.91-5.2C16.09 3.62 12.47 0 8.044 0S0 3.62 0 8.04c0 4.43 3.62 8.05 8.045 8.05a7.915 7.915 0 0 0 5.195-1.91l3.62 3.62c.134.13.302.2.47.2a.683.683 0 0 0 .47-.2.65.65 0 0 0 0-.94l-3.62-3.62zm-6.135 1.54c-3.687 0-6.704-3.01-6.704-6.7 0-3.69 3.017-6.71 6.704-6.71s6.704 3.02 6.704 6.71-3.017 6.7-6.704 6.7z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+
+          <a href="#" class="online-banking-btn">
+            <span id="shopping-bag-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="78%"
+                height="100%"
+                viewBox="0 0 14 18"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.625 6H0v12h14V6H2.625zM1.5 7.5h11v9h-11v-9zM6.993 0c2.19-.004 4 1.805 4.007 4.04V6H3V4.053C2.998 1.818 4.803.008 6.993 0zm.003 1.5a2.538 2.538 0 0 0-2.541 2.553V6h5.09V4.043A2.538 2.538 0 0 0 6.996 1.5z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+            Login
+          </a>
+
+          <div class="logo">
+            <img src="./icons/logo.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="menu-content">
+          <ul>
+            <li><a href="">Home</a><span><i class="fa-solid fa-chevron-right"></i></span></li>
+            <li><a href="">Personal</a><span><i class="fa-solid fa-chevron-right"></i></span></li>
+            <li><a href="">Business</a><span><i class="fa-solid fa-chevron-right"></i></span></li>
+            <li><a href="">About Us</a><span><i class="fa-solid fa-chevron-right"></i></span></li>
+            <li><a href="">Open an Account</a><span><i class="fa-solid fa-chevron-right"></i></span></li>
+          </ul>
+        </div>
+      </div>
+
     </nav>
 
     <!-- ============ BREADCRUMB ============ -->
