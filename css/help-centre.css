@@ -2,7 +2,7 @@
   padding: 6vw 8vw !important;
 }
 
-.section-banner>.container {
+.section-banner > .container {
   position: absolute;
   top: 0.5rem;
   left: 8vw;
@@ -304,7 +304,10 @@ section.service-tabs li.active p {
   margin: 1rem 0;
 }
 
-.faq-accordion li.accordion-item:has(input:checked) .label-inner span:last-of-type {
+.faq-accordion
+  li.accordion-item:has(input:checked)
+  .label-inner
+  span:last-of-type {
   opacity: 0;
 }
 
@@ -369,4 +372,21 @@ section.service-tabs li.active p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  section.service-tabs form {
+    width: clamp(10rem, 20rem, 90vw);
+  }
+
+  section.service-tabs li {
+    max-width: 98vw;
+  }
+  .section-banner-modal {
+    margin-left: unset;
+  }
+  .faq-accordion .accordion-item h2 {
+    font-size: 0.9rem;
+    padding-right: 1.4rem;
+  }
 }

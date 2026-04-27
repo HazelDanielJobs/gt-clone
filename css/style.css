@@ -824,6 +824,17 @@ section.bs-trio-divs .pns-item {
 /* RESPONSIVENESS */
 
 @media screen and (max-width: 900px) {
+
+.section-banner-modal  {
+  width: 100%;
+  margin-left: 2vw;
+}
+
+.section-banner-modal h2 {
+  font-size: 1.8rem;
+  width: 98%;
+}
+
   .hero-slide {
     padding-left: 4vw !important;
   }

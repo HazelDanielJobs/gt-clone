@@ -290,11 +290,11 @@
   bottom: 4rem;
   position: absolute;
   z-index: inherit;
-  display: flex;
   flex-direction: column;
   overflow: hidden;
   gap: 0.2rem;
   overflow: visible;
+  display: none;
 }
 
 #footer-floater .chatbox-area .x-label {
@@ -322,7 +322,7 @@
 }
 
 #footer-floater:has(input:checked) .chatbox-area {
-  display: none;
+  display: flex;
 }
 
 #footer-floater .chatbox-area .chat-instruction-area {
