@@ -100,6 +100,10 @@ body {
     justify-content: center !important;
   }
 
+  .sm-margin-adjust-center {
+    margin: 0 auto !important;
+  }
+
   .sm-align-center {
     align-items: center !important;
     place-items: center !important;
@@ -110,6 +114,10 @@ body {
   .md-justify-center {
     justify-items: center !important;
     justify-content: center !important;
+  }
+
+  .md-margin-adjust-center {
+    margin: 0 auto !important;
   }
 
   .md-align-center {
@@ -123,8 +131,19 @@ body {
     justify-items: center !important;
     justify-content: center !important;
   }
+
+  .lg-margin-adjust-center {
+    margin: 0 auto !important;
+  }
+
   .lg-align-center {
     align-items: center !important;
     place-items: center !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sm-margin-adjust-center {
+    margin: 0 auto;
   }
 }

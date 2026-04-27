@@ -557,7 +557,7 @@
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media (max-width: 47.9375rem) {
+@media (max-width: 768px) {
   .utility-header ._container {
     flex-direction: column;
     padding: 0.5rem 0.9375rem;

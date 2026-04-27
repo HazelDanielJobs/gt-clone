@@ -251,6 +251,7 @@ section.pb-content-block .wrapper {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .pb-content-left {
@@ -809,4 +810,79 @@ section.bs-trio-divs .pns-item {
 
 .btn:hover .btn-arrow {
   transform: translateX(0.25rem);
+}
+
+
+/* MICRO-INTERACTIONS*/
+
+.gt-accent-btn span{
+  transition: all .3s linear;
+}
+.gt-accent-btn:hover span{
+  transform: translateX(0.3rem);
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 900px) {
+  .section-checkpoint {
+    padding: 3rem 1rem !important;
+  }
+  section.pb-content-block {
+    padding: 4rem 2rem;
+  }
+
+  section.pb-content-block .pb-content-right {
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+  section.pb-content-block .pb-content-right ul {
+    align-items: center;
+    padding-left: unset;
+  }
+  section.pb-content-block .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banking-section-card-wide .wrapper .prb-content-left {
+    width: 100%;
+  }
+
+  .banking-section-card-wide {
+    padding: 4rem 2rem !important;
+  }
+  .banking-section-card-wide .wrapper {
+    flex-direction: column;
+  }
+
+  .bs-trio-divs {
+    padding: 4rem 2rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  section.pb-content-block .pb-content-left {
+    width: 100%;
+  }
+  section.pb-content-block .pb-content-right {
+    width: 100%;
+  }
+
+  section.pb-content-block .pb-content-right ul {
+    width: 100%;
+  }
+  section.pb-content-block .pb-content-right ul  li{
+    width: 100%;
+  }
+
+  section.pb-content-block .pb-content-right .pb-content-right-image {
+    margin-right: auto;
+  }
+
+  section.pb-content-block .wrapper {
+    flex-direction: column;
+  }
 }

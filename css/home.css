@@ -15,7 +15,6 @@
 .hero-section .carousel-item {
   height: 42rem;
   /* width: 20rem; */
-  background-color: red;
 }
 
 .hero-section .carousel-item img {
@@ -378,7 +377,10 @@
   border-right: 1px solid #00000028;
 }
 
-.section-initiatives #initiativesCarousel button[data-bs-target="#initiativesCarousel"] >span:first-of-type {
+.section-initiatives
+  #initiativesCarousel
+  button[data-bs-target="#initiativesCarousel"]
+  > span:first-of-type {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
@@ -400,15 +402,15 @@
   display: flex;
 }
 
-.section-initiatives .carousel-item>.inner{
+.section-initiatives .carousel-item > .inner {
   display: flex;
 }
 
 .section-initiatives .carousel-item.active {
 }
 
-
-.section-initiatives .carousel-item .child1, .section-initiatives .carousel-item .child2 {
+.section-initiatives .carousel-item .child1,
+.section-initiatives .carousel-item .child2 {
   width: 50%;
 }
 .initiative-card {
@@ -477,14 +479,44 @@
 /* ============================================
    RESPONSIVE - HOME PAGE
    ============================================ */
-@media (max-width: 47.9375rem) {
+@media (max-width: 768px) {
   .login-overlay {
     position: static;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 8rem;
+  }
+  .carousel-item {
+    background-color: white;
+    height: 56rem !important;
   }
   .hero-slide {
     flex-direction: column;
+  }
+
+  .hero-section .hero-carousel-image {
+    object-fit: contain;
+    height: 50% !important;
+  }
+  .hero-section .carousel-indicators {
+    top: 1rem;
+    right: 0;
+  }
+
+  .hero-section .carousel-indicators [data-bs-target] {
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.8rem;
+  }
+
+  .hero-slide-content {
+    position: absolute;
+    top: 28rem;
+    /* top:  */
+  }
+
+  .hero-slide-content > p > span {
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
   .hero-slide-content,
   .hero-slide-image {
@@ -502,5 +534,8 @@
   }
   .feature-card-image {
     min-height: 12.5rem;
+  }
+  .section-initiatives {
+    padding-left: 1rem;
   }
 }
