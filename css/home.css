@@ -219,6 +219,7 @@
   font-weight: 500;
   width: 24rem;
   color: var(--text-secondary);
+  max-width: 95vw;
 }
 
 .section-products .products-container {
